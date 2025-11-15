@@ -189,106 +189,110 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* BLOQUE 3: VILLAS SHOWCASE */}
-      <section className="section section-white">
-        <div className="container">
+      {/* BLOQUE 3: VILLAS CAROUSEL */}
+      <section className="section section-white villas-carousel-section">
+        <div className="carousel-header">
           <div className="brand-subtle">AQUA CANA Country and Residence</div>
           <h2 className="section-title">VILLAS DISPONIBLES</h2>
           <p className="section-subtitle">DISEÑO Y ELEGANCIA</p>
+        </div>
+        
+        <div className="carousel-container">
+          <button onClick={prevVilla} className="carousel-arrow left" aria-label="Villa anterior">
+            <ChevronDown style={{ transform: 'rotate(90deg)' }} size={48} />
+          </button>
           
-          <div className="villa-showcase">
-            <div className="villa-slider">
-              <div className="villa-slide">
-                <div className="villa-image-large">
-                  <img 
-                    src={villasData[selectedVilla].imagePlaceholder} 
-                    alt={villasData[selectedVilla].name}
-                  />
-                </div>
-                
-                <div className="villa-info">
-                  <h3 className="villa-name">{villasData[selectedVilla].name}</h3>
-                  <p className="villa-tagline">{villasData[selectedVilla].subtitle}</p>
-                  <div className="villa-price-large">{villasData[selectedVilla].price}</div>
-                  
-                  <div className="villa-specs-grid">
-                    <div className="spec-item">
-                      <Bed size={28} />
-                      <span>{villasData[selectedVilla].bedrooms} Habitaciones</span>
-                    </div>
-                    <div className="spec-item">
-                      <Bath size={28} />
-                      <span>{villasData[selectedVilla].bathrooms} Baños</span>
-                    </div>
-                    {villasData[selectedVilla].lotSize && (
-                      <div className="spec-item">
-                        <Maximize size={28} />
-                        <span>Terreno: {villasData[selectedVilla].lotSize}</span>
-                      </div>
-                    )}
-                    <div className="spec-item">
-                      <Home size={28} />
-                      <span>Construcción: {villasData[selectedVilla].constructionSize}</span>
-                    </div>
-                  </div>
-                  
-                  <div className="villa-features-compact">
-                    <ul>
-                      {villasData[selectedVilla].features.map((feature, idx) => (
-                        <li key={idx}>
-                          <Check size={18} />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  
-                  <Button 
-                    onClick={scrollToForm}
-                    size="lg"
-                    className="cta-button"
-                  >
-                    QUIERO ESTA VILLA
-                  </Button>
-                </div>
+          <div className="carousel-content">
+            <div className="carousel-slide">
+              <div className="carousel-image-wrapper">
+                <img 
+                  src={villasData[selectedVilla].imagePlaceholder} 
+                  alt={villasData[selectedVilla].name}
+                  className="carousel-image"
+                />
               </div>
               
-              <div className="villa-nav">
-                <button onClick={prevVilla} className="nav-btn prev">
-                  <ChevronDown style={{ transform: 'rotate(90deg)' }} size={32} />
-                </button>
-                <div className="villa-dots">
-                  {villasData.map((_, index) => (
-                    <button
-                      key={index}
-                      className={`dot ${index === selectedVilla ? 'active' : ''}`}
-                      onClick={() => setSelectedVilla(index)}
-                      aria-label={`Villa ${index + 1}`}
-                    />
-                  ))}
+              <div className="carousel-info">
+                <div className="carousel-villa-header">
+                  <h3 className="carousel-villa-name">{villasData[selectedVilla].name}</h3>
+                  <p className="carousel-villa-tagline">{villasData[selectedVilla].subtitle}</p>
                 </div>
-                <button onClick={nextVilla} className="nav-btn next">
-                  <ChevronDown style={{ transform: 'rotate(-90deg)' }} size={32} />
-                </button>
-              </div>
-            </div>
-            
-            <div className="villas-grid-compact">
-              {villasData.map((villa, index) => (
-                <div 
-                  key={villa.id}
-                  className={`villa-card-mini ${index === selectedVilla ? 'active' : ''}`}
-                  onClick={() => setSelectedVilla(index)}
-                >
-                  <img src={villa.imagePlaceholder} alt={villa.name} />
-                  <div className="villa-card-info">
-                    <h4>{villa.name}</h4>
-                    <p className="price-mini">{villa.price}</p>
+                
+                <div className="carousel-villa-price">{villasData[selectedVilla].price}</div>
+                
+                <div className="carousel-specs">
+                  <div className="carousel-spec">
+                    <Bed size={32} />
+                    <div>
+                      <span className="spec-number">{villasData[selectedVilla].bedrooms}</span>
+                      <span className="spec-label">Habitaciones</span>
+                    </div>
+                  </div>
+                  <div className="carousel-spec">
+                    <Bath size={32} />
+                    <div>
+                      <span className="spec-number">{villasData[selectedVilla].bathrooms}</span>
+                      <span className="spec-label">Baños</span>
+                    </div>
+                  </div>
+                  {villasData[selectedVilla].lotSize && (
+                    <div className="carousel-spec">
+                      <Maximize size={32} />
+                      <div>
+                        <span className="spec-number">{villasData[selectedVilla].lotSize}</span>
+                        <span className="spec-label">Terreno</span>
+                      </div>
+                    </div>
+                  )}
+                  <div className="carousel-spec">
+                    <Home size={32} />
+                    <div>
+                      <span className="spec-number">{villasData[selectedVilla].constructionSize}</span>
+                      <span className="spec-label">Construcción</span>
+                    </div>
                   </div>
                 </div>
-              ))}
+                
+                <div className="carousel-features">
+                  <h4>Características Destacadas</h4>
+                  <ul>
+                    {villasData[selectedVilla].features.map((feature, idx) => (
+                      <li key={idx}>
+                        <Check size={20} />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <Button 
+                  onClick={scrollToForm}
+                  size="lg"
+                  className="carousel-cta"
+                >
+                  QUIERO ESTA VILLA
+                </Button>
+              </div>
             </div>
           </div>
+          
+          <button onClick={nextVilla} className="carousel-arrow right" aria-label="Siguiente villa">
+            <ChevronDown style={{ transform: 'rotate(-90deg)' }} size={48} />
+          </button>
+        </div>
+        
+        <div className="carousel-indicators">
+          {villasData.map((villa, index) => (
+            <button
+              key={villa.id}
+              className={`indicator ${index === selectedVilla ? 'active' : ''}`}
+              onClick={() => setSelectedVilla(index)}
+              aria-label={`Ver ${villa.name}`}
+            >
+              <span className="indicator-number">{index + 1}</span>
+              <span className="indicator-name">{villa.name}</span>
+            </button>
+          ))}
         </div>
       </section>
 
