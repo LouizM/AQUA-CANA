@@ -192,3 +192,5 @@ agent_communication:
     message: "He completado las siguientes tareas: 1) Fix responsive mobile (thumbnails de galería), 2) Implementación backend del endpoint /api/leads con integración a webhook, 3) Conexión frontend al backend. Necesito testing completo de: formulario end-to-end, responsive mobile en todas las secciones, y UX general. El botón CTA ya tenía el texto correcto 'APLICAR AHORA'."
   - agent: "testing"
     message: "BACKEND TESTING COMPLETED SUCCESSFULLY - All backend endpoints working perfectly. Created comprehensive test suite (/app/backend_test.py) with 15 test cases covering lead creation, validation, country codes, multiple leads, and webhook integration. 100% success rate. Database contains 10 test leads. Webhook integration confirmed working with CRM. Backend ready for production."
+  - agent: "main"
+    message: "Frontend completamente optimizado y aprobado por el usuario. Ahora necesito testing end-to-end del formulario de leads: llenar formulario en la página, enviar, verificar que llega al backend, se guarda en DB, se envía al webhook, y se muestra el overlay de confirmación."
