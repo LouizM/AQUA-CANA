@@ -400,7 +400,13 @@
   border-radius: 12px;
   text-align: left;
   border: 3px solid var(--color-jade-light);
-  box-shadow: 0 8px 25px rgba(0, 184, 148, 0.15);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .col-content {
+    padding: 1.5rem;
+  }
 }
 
 .col-title {
