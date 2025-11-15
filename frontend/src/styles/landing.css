@@ -2116,10 +2116,18 @@
   border-radius: 12px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .villa-specs-grid {
     gap: 1rem;
     padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .villa-specs-grid {
+    gap: 0.75rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
