@@ -232,27 +232,29 @@
 }
 
 .logo-main {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 900;
-  letter-spacing: 0.6em;
+  letter-spacing: 0.5em;
   color: var(--color-white);
   line-height: 1;
   font-stretch: extra-expanded;
-  transform: scaleX(1.3);
+  transform: scaleX(1.2);
   display: inline-block;
 }
 
 @media (max-width: 768px) {
   .logo-main {
-    letter-spacing: 0.5em;
-    transform: scaleX(1.25);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    letter-spacing: 0.4em;
+    transform: scaleX(1.15);
   }
 }
 
 @media (max-width: 480px) {
   .logo-main {
-    letter-spacing: 0.45em;
-    transform: scaleX(1.2);
+    font-size: 1.25rem;
+    letter-spacing: 0.35em;
+    transform: scaleX(1.1);
   }
 }
 
