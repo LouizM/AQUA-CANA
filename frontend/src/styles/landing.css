@@ -1939,6 +1939,12 @@
   margin-top: 1.25rem;
 }
 
+@media (max-width: 480px) {
+  .villa-thumbnails-wrapper {
+    margin-top: 1rem;
+  }
+}
+
 .villa-thumbnails-scroll {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
