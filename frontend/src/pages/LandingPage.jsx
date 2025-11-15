@@ -23,6 +23,7 @@ const iconMap = {
 const LandingPage = () => {
   const [formData, setFormData] = useState({
     nombre: '',
+    codigoPais: '+1',
     telefono: '',
     email: ''
   });
