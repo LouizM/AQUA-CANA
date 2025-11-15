@@ -189,11 +189,9 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Formulario de leads end-to-end (frontend + backend + webhook)"
-    - "Responsive design en mobile (todas las secciones)"
     - "UX y fluidez general de la página"
   stuck_tasks: []
-  test_all: true
+  test_all: false
   test_priority: "high_first"
 
 agent_communication:
