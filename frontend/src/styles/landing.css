@@ -619,47 +619,89 @@
   box-shadow: 0 10px 30px rgba(78, 227, 143, 0.5);
 }
 
-.solares-image-content {
+/* Imagen Principal Vendible */
+.solares-image-principal {
   position: relative;
 }
 
-.solares-preview-image {
+.solares-main-image-vendible {
   width: 100%;
   height: auto;
-  border-radius: 16px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 
+    0 30px 80px rgba(0, 0, 0, 0.5),
+    0 0 80px rgba(78, 227, 143, 0.2);
+  transition: transform 0.4s ease;
+  border: 3px solid var(--color-jade-light);
 }
 
-.solares-preview-image:hover {
+.solares-main-image-vendible:hover {
   transform: scale(1.02);
 }
 
-.solares-image-badge {
+/* Badge de Urgencia con Amarillo */
+.solares-badge-urgencia {
   position: absolute;
   top: 20px;
-  right: 20px;
-  background: var(--color-jade-light);
-  color: var(--color-jade-dark);
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  left: 20px;
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  color: #1a1a1a;
+  padding: 1.25rem 2rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 
+    0 8px 30px rgba(255, 165, 0, 0.6),
+    0 0 40px rgba(255, 215, 0, 0.4);
+  animation: pulseUrgencia 2s ease-in-out infinite;
 }
 
-.badge-text {
-  display: block;
-  font-size: 1.3rem;
+.badge-urgencia-icon {
+  font-size: 1.5rem;
+  animation: flash 1.5s ease-in-out infinite;
+}
+
+.badge-urgencia-text {
+  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
 }
 
-.badge-subtext {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 500;
-  margin-top: 0.25rem;
-  opacity: 0.9;
+@keyframes pulseUrgencia {
+  0%, 100% {
+    box-shadow: 
+      0 8px 30px rgba(255, 165, 0, 0.6),
+      0 0 40px rgba(255, 215, 0, 0.4);
+  }
+  50% {
+    box-shadow: 
+      0 12px 40px rgba(255, 165, 0, 0.8),
+      0 0 60px rgba(255, 215, 0, 0.6);
+  }
+}
+
+@keyframes flash {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .solares-badge-urgencia {
+    padding: 1rem 1.5rem;
+    top: 15px;
+    left: 15px;
+  }
+  
+  .badge-urgencia-text {
+    font-size: 0.8rem;
+  }
 }
 
 /* Responsive para Solares */
