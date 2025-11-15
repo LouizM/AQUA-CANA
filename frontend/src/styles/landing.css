@@ -615,48 +615,37 @@
 }
 
 .solares-cta-button-vendible {
-  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%) !important;
-  color: #1a1a1a !important;
-  font-weight: 700 !important;
-  padding: 1.75rem 4rem !important;
-  font-size: 1.25rem !important;
-  letter-spacing: 0.15em !important;
-  border-radius: 50px !important;
-  transition: all 0.3s ease !important;
+  background: rgba(64, 224, 208, 0.15) !important;
+  color: rgba(64, 224, 208, 1) !important;
+  font-weight: 400 !important;
+  padding: 1.5rem 4rem !important;
+  font-size: 1.125rem !important;
+  letter-spacing: 0.2em !important;
+  border-radius: 2px !important;
+  transition: all 0.4s ease !important;
   box-shadow: 
-    0 10px 40px rgba(255, 165, 0, 0.6),
-    0 0 50px rgba(255, 215, 0, 0.4) !important;
+    0 8px 30px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
   text-transform: uppercase !important;
-  border: none !important;
-  animation: pulseButton 2s ease-in-out infinite;
+  border: 1px solid rgba(64, 224, 208, 0.4) !important;
+  backdrop-filter: blur(10px) !important;
 }
 
 .solares-cta-button-vendible:hover {
-  background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%) !important;
-  transform: translateY(-4px) scale(1.02) !important;
+  background: rgba(64, 224, 208, 0.25) !important;
+  border-color: rgba(64, 224, 208, 0.6) !important;
+  transform: translateY(-3px) !important;
   box-shadow: 
-    0 15px 50px rgba(255, 165, 0, 0.8),
-    0 0 70px rgba(255, 215, 0, 0.6) !important;
-}
-
-@keyframes pulseButton {
-  0%, 100% {
-    box-shadow: 
-      0 10px 40px rgba(255, 165, 0, 0.6),
-      0 0 50px rgba(255, 215, 0, 0.4);
-  }
-  50% {
-    box-shadow: 
-      0 15px 50px rgba(255, 165, 0, 0.7),
-      0 0 60px rgba(255, 215, 0, 0.5);
-  }
+    0 12px 40px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(64, 224, 208, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
 }
 
 .solares-cta-urgencia {
-  font-size: 1rem;
-  color: #FFD700;
+  font-size: 0.95rem;
+  color: rgba(64, 224, 208, 0.8);
   margin-top: 1.5rem;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 0.05em;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
