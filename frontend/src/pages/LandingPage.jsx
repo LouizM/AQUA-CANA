@@ -99,25 +99,35 @@ const LandingPage = () => {
     }
 
     try {
-      // Simulación de envío (en backend se implementará el webhook real)
-      console.log('Enviando datos al webhook:', formData);
+      const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
       
-      // Aquí iría la llamada al backend que enviará al webhook
-      // const response = await fetch('/api/submit-lead', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData)
-      // });
+      const response = await fetch(`${BACKEND_URL}/api/leads`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
       
-      // Simular éxito después de 1 segundo
-      setTimeout(() => {
-        setShowOverlay(true);
-        setFormData({ nombre: '', telefono: '', email: '' });
-      }, 1000);
+      if (!response.ok) {
+        throw new Error('Error al enviar el formulario');
+      }
+      
+      const data = await response.json();
+      console.log('Lead registrado exitosamente:', data);
+      
+      // Mostrar overlay de éxito
+      setShowOverlay(true);
+      
+      // Limpiar formulario
+      setFormData({ 
+        nombre: '', 
+        codigoPais: '+1',
+        telefono: '', 
+        email: '' 
+      });
       
     } catch (error) {
       console.error('Error al enviar formulario:', error);
-      alert('Hubo un error. Por favor intenta de nuevo.');
+      alert('Hubo un error al enviar tu solicitud. Por favor intenta de nuevo.');
     }
   };
 
