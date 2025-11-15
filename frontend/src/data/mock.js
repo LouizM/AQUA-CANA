@@ -143,7 +143,7 @@ export const amenitiesData = [
     title: "RESTAURANT & BAR CHILL OUT",
     description: "Gastronomía y entretenimiento exclusivo para residentes",
     icon: "utensils",
-    imagePlaceholder: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/hlt7kvhh_chill%20out%20beach%20bar.jpg"
   },
   {
     title: "SEGURIDAD 24/7",
