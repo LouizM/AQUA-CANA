@@ -91,6 +91,13 @@
   text-transform: uppercase;
   margin-bottom: 3rem;
   color: var(--color-gray-dark);
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  .section-subtitle {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .text-large {
