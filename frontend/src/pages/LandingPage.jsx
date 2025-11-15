@@ -281,18 +281,17 @@ const LandingPage = () => {
           </button>
         </div>
         
-        <div className="carousel-indicators">
-          {villasData.map((villa, index) => (
-            <button
-              key={villa.id}
-              className={`indicator ${index === selectedVilla ? 'active' : ''}`}
-              onClick={() => setSelectedVilla(index)}
-              aria-label={`Ver ${villa.name}`}
-            >
-              <span className="indicator-number">{index + 1}</span>
-              <span className="indicator-name">{villa.name}</span>
-            </button>
-          ))}
+        <div className="carousel-navigation-dots">
+          <div className="dots-container">
+            {villasData.map((_, index) => (
+              <button
+                key={index}
+                className={`carousel-dot ${index === selectedVilla ? 'active' : ''}`}
+                onClick={() => setSelectedVilla(index)}
+                aria-label={`Villa ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </section>
 
