@@ -794,7 +794,7 @@ const LandingPage = () => {
               size="lg"
               className="submit-button-turquesa"
             >
-              SOLICITAR MI CONTACTO
+              APLICAR AHORA
             </Button>
             
             <p className="form-privacy-turquesa">
