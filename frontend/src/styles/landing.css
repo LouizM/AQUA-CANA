@@ -196,6 +196,243 @@
   background-color: var(--color-white);
 }
 
+/* Sección Solares en Preventa */
+.solares-preventa-section {
+  position: relative;
+  min-height: 700px;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.solares-video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.solares-background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.solares-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 120, 80, 0.92) 0%,
+    rgba(0, 95, 66, 0.88) 100%
+  );
+}
+
+.solares-content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.solares-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.solares-text-content {
+  color: var(--color-white);
+}
+
+.brand-subtle-white {
+  font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-jade-light);
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.solares-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.solares-subtitle {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 600;
+  color: var(--color-jade-light);
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.solares-description {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+}
+
+.solares-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.solar-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.25rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--color-jade-light);
+  transition: all 0.3s ease;
+}
+
+.solar-feature-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateX(5px);
+}
+
+.solar-feature-item .feature-check {
+  color: var(--color-jade-light);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.solar-feature-item h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.solar-feature-item p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  line-height: 1.4;
+}
+
+.solares-cta-button {
+  background: var(--color-jade-light) !important;
+  color: var(--color-jade-dark) !important;
+  font-weight: 700;
+  padding: 1.5rem 3rem !important;
+  font-size: 1.1rem !important;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(78, 227, 143, 0.4);
+}
+
+.solares-cta-button:hover {
+  background: var(--color-jade-medium) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(78, 227, 143, 0.5);
+}
+
+.solares-image-content {
+  position: relative;
+}
+
+.solares-preview-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.solares-preview-image:hover {
+  transform: scale(1.02);
+}
+
+.solares-image-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--color-jade-light);
+  color: var(--color-jade-dark);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.badge-text {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.badge-subtext {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 0.25rem;
+  opacity: 0.9;
+}
+
+/* Responsive para Solares */
+@media (max-width: 968px) {
+  .solares-content-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .solares-text-content {
+    text-align: center;
+  }
+  
+  .solares-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .solar-feature-item {
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+@media (max-width: 640px) {
+  .solares-preventa-section {
+    padding: 4rem 0;
+  }
+  
+  .solares-features {
+    gap: 1rem;
+  }
+  
+  .solar-feature-item {
+    padding: 1rem;
+  }
+  
+  .solares-image-badge {
+    top: 10px;
+    right: 10px;
+    padding: 0.75rem 1rem;
+  }
+  
+  .badge-text {
+    font-size: 1rem;
+  }
+  
+  .badge-subtext {
+    font-size: 0.75rem;
+  }
+}
+
 .content-block {
   margin-top: 3rem;
 }
