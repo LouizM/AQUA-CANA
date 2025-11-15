@@ -240,7 +240,7 @@ const LandingPage = () => {
           
           {/* Título Principal Vendible */}
           <h2 className="solares-main-title-vendible">SOLARES EN PREVENTA</h2>
-          <p className="solares-tagline-vendible">Tu inversión en el paraíso caribeño comienza aquí</p>
+          <p className="solares-tagline-vendible">Tu Vida en este Paraíso Caribeño Comienza Aquí</p>
               
           {/* Grid de Contenido Vendible */}
           <div className="solares-vendible-grid">
