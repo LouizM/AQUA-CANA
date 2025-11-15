@@ -515,9 +515,21 @@
   padding: 0 4rem;
 }
 
+@media (max-width: 968px) {
+  .carousel-content {
+    padding: 0 3.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .carousel-content {
-    padding: 0 3rem;
+    padding: 0 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-content {
+    padding: 0 2rem;
   }
 }
 
