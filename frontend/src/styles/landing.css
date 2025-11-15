@@ -761,7 +761,7 @@
 
 .carousel-cta {
   width: 100%;
-  background-color: var(--color-jade-vibrant);
+  background: linear-gradient(135deg, var(--color-jade-vibrant) 0%, var(--color-jade-accent) 100%);
   color: var(--color-white);
   font-size: 1.25rem;
   font-weight: 700;
@@ -771,13 +771,28 @@
   border-radius: 8px;
   text-transform: uppercase;
   cursor: pointer;
+  box-shadow: 0 6px 25px rgba(0, 168, 107, 0.4);
   transition: all 0.3s ease;
 }
 
 .carousel-cta:hover {
-  background-color: var(--color-jade-dark);
+  background: linear-gradient(135deg, var(--color-jade-dark) 0%, var(--color-jade-vibrant) 100%);
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 212, 196, 0.4);
+  box-shadow: 0 10px 35px rgba(0, 168, 107, 0.5);
+}
+
+@media (max-width: 768px) {
+  .carousel-cta {
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-cta {
+    font-size: 1rem;
+    padding: 0.875rem 1.25rem;
+  }
 }
 
 /* Carousel Navigation Dots */
