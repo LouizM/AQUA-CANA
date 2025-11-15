@@ -205,10 +205,23 @@
 }
 
 .logo-box {
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 4.5rem;
   border: 3px solid var(--color-white);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
+  min-width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .logo-box {
+    padding: 1.25rem 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-box {
+    padding: 1rem 2.5rem;
+  }
 }
 
 .logo-text {
