@@ -2370,12 +2370,13 @@
 }
 
 .form-field label {
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.875rem;
+  font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.12em;
   color: var(--color-jade-dark);
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.7rem;
+  text-shadow: 0 1px 4px rgba(0, 120, 80, 0.1);
 }
 
 .input-immobiliaria {
