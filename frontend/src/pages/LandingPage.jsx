@@ -166,7 +166,7 @@ const LandingPage = () => {
       </section>
 
       {/* BLOQUE 2: SOLARES + OPORTUNIDAD */}
-      <section className="section section-base">
+      <section className="section section-jade-dark">
         <div className="container">
           <div className="brand-subtle">AQUA CANA Country and Residence</div>
           <h2 className="section-title">OPORTUNIDAD ÚNICA</h2>
