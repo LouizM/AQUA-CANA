@@ -1471,19 +1471,35 @@
 }
 
 .footer-logo-main {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 900;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.35em;
   color: var(--color-white);
   line-height: 1;
+  transform: scaleX(1.1);
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .footer-logo-main {
+    font-size: 1.125rem;
+    letter-spacing: 0.3em;
+  }
 }
 
 .footer-logo-subtitle {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-weight: 600;
   letter-spacing: 0.2em;
   color: var(--color-white);
-  opacity: 0.8;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .footer-logo-subtitle {
+    font-size: 0.6rem;
+  }
 }
 
 .footer-info p {
