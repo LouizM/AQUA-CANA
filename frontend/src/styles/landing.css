@@ -2762,19 +2762,19 @@
   }
 }
 
-.form-privacy-immobiliaria {
-  font-size: 0.8rem;
-  color: #666;
-  margin-top: 1.5rem;
+.form-privacy-turquesa {
+  font-size: 0.85rem;
+  color: rgba(64, 224, 208, 0.6);
+  margin-top: 1.75rem;
   text-align: center;
   line-height: 1.6;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 480px) {
-  .form-privacy-immobiliaria {
+  .form-privacy-turquesa {
     font-size: 0.75rem;
   }
 }
