@@ -398,15 +398,37 @@ const LandingPage = () => {
                 <Phone size={20} />
                 Teléfono
               </label>
-              <Input
-                id="telefono"
-                name="telefono"
-                type="tel"
-                placeholder="+1 (809) 000-0000"
-                value={formData.telefono}
-                onChange={handleInputChange}
-                required
-              />
+              <div className="phone-input-group">
+                <select
+                  name="codigoPais"
+                  value={formData.codigoPais}
+                  onChange={handleInputChange}
+                  className="country-code-select"
+                >
+                  <option value="+1">🇺🇸 +1</option>
+                  <option value="+1">🇩🇴 +1</option>
+                  <option value="+52">🇲🇽 +52</option>
+                  <option value="+54">🇦🇷 +54</option>
+                  <option value="+55">🇧🇷 +55</option>
+                  <option value="+56">🇨🇱 +56</option>
+                  <option value="+57">🇨🇴 +57</option>
+                  <option value="+58">🇻🇪 +58</option>
+                  <option value="+34">🇪🇸 +34</option>
+                  <option value="+44">🇬🇧 +44</option>
+                  <option value="+33">🇫🇷 +33</option>
+                  <option value="+49">🇩🇪 +49</option>
+                </select>
+                <Input
+                  id="telefono"
+                  name="telefono"
+                  type="tel"
+                  placeholder="(809) 000-0000"
+                  value={formData.telefono}
+                  onChange={handleInputChange}
+                  className="phone-number-input"
+                  required
+                />
+              </div>
             </div>
             
             <div className="form-group">
