@@ -28,6 +28,7 @@ const LandingPage = () => {
   });
   const [showOverlay, setShowOverlay] = useState(false);
   const [selectedVilla, setSelectedVilla] = useState(0);
+  const [selectedAmenity, setSelectedAmenity] = useState(0);
 
   const nextVilla = () => {
     setSelectedVilla((prev) => (prev + 1) % villasData.length);
