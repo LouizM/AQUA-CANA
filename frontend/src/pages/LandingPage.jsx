@@ -201,12 +201,16 @@ const LandingPage = () => {
           <h1 className="hero-title">LA VILLA DE TUS SUEÑOS</h1>
           <p className="hero-subtitle">EN EL CORAZÓN DEL CARIBE</p>
           
+          <div className="hero-badge-inicial">
+            <span className="badge-inicial-text">0% DE INICIAL</span>
+          </div>
+          
           <Button 
             onClick={scrollToForm}
             className="hero-cta"
             size="lg"
           >
-            APLICA AHORA
+            SOLICITA INFORMACIÓN
           </Button>
         </div>
       </section>
