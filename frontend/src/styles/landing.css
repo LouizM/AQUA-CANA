@@ -2659,8 +2659,9 @@
 }
 
 .input-immobiliaria::placeholder {
-  color: #999;
-  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300;
+  letter-spacing: 0.02em;
 }
 
 /* Phone Input Immobiliaria */
