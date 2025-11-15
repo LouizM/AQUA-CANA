@@ -1366,19 +1366,35 @@
 }
 
 .overlay-logo-main {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 900;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.4em;
   color: var(--color-white);
   line-height: 1;
+  transform: scaleX(1.15);
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .overlay-logo-main {
+    font-size: 1.5rem;
+    letter-spacing: 0.35em;
+  }
 }
 
 .overlay-logo-subtitle {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   color: var(--color-white);
-  opacity: 0.9;
+  opacity: 0.95;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .overlay-logo-subtitle {
+    font-size: 0.65rem;
+  }
 }
 
 .overlay-title {
