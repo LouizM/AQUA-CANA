@@ -696,21 +696,22 @@
 }
 
 .hero-icon {
-  width: 100px;
+  width: 70px;
   height: auto;
-  filter: brightness(0) invert(1) drop-shadow(0 4px 15px rgba(0, 0, 0, 0.4));
-  animation: floatIcon 3s ease-in-out infinite;
+  filter: brightness(0) invert(1) drop-shadow(0 4px 20px rgba(0, 0, 0, 0.6));
+  animation: floatIcon 4s ease-in-out infinite;
+  opacity: 0.95;
 }
 
 @media (max-width: 768px) {
   .hero-icon {
-    width: 75px;
+    width: 55px;
   }
 }
 
 @media (max-width: 480px) {
   .hero-icon {
-    width: 65px;
+    width: 50px;
   }
 }
 
@@ -719,76 +720,72 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
   }
 }
 
-.logo-box {
-  padding: 1.25rem 3.5rem;
-  border: 2px solid var(--color-white);
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  min-width: fit-content;
+.hero-brand-box {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.875rem 2.5rem;
+  border-radius: 4px;
 }
 
 @media (max-width: 768px) {
-  .logo-box {
-    padding: 1rem 2.75rem;
+  .hero-brand-box {
+    padding: 0.75rem 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .logo-box {
-    padding: 0.875rem 2rem;
+  .hero-brand-box {
+    padding: 0.625rem 1.5rem;
   }
 }
 
-.logo-text {
+.hero-brand-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.35rem;
 }
 
-.logo-main {
-  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
-  font-weight: 900;
-  letter-spacing: 0.45em;
+.hero-brand-name {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  font-weight: 300;
+  letter-spacing: 0.5em;
   color: var(--color-white);
   line-height: 1;
-  font-stretch: extra-expanded;
-  transform: scaleX(1.15);
-  display: inline-block;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
-  .logo-main {
-    font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+  .hero-brand-name {
+    letter-spacing: 0.45em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-brand-name {
+    font-size: 1rem;
     letter-spacing: 0.4em;
-    transform: scaleX(1.12);
   }
 }
 
-@media (max-width: 480px) {
-  .logo-main {
-    font-size: 1.125rem;
-    letter-spacing: 0.35em;
-    transform: scaleX(1.08);
-  }
-}
-
-.logo-subtitle {
-  font-size: clamp(0.5rem, 1.25vw, 0.75rem);
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  color: var(--color-white);
-  opacity: 0.95;
-  white-space: nowrap;
+.hero-brand-subtitle {
+  font-size: clamp(0.5rem, 1vw, 0.65rem);
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: capitalize;
+  font-style: italic;
 }
 
 @media (max-width: 480px) {
-  .logo-subtitle {
+  .hero-brand-subtitle {
     font-size: 0.5rem;
+    letter-spacing: 0.25em;
   }
 }
 
