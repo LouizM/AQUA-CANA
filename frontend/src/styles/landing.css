@@ -281,7 +281,7 @@
 }
 
 .solares-main-title-vendible {
-  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
   font-weight: 200;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -291,11 +291,11 @@
   text-shadow: 
     0 6px 30px rgba(0, 0, 0, 0.9),
     0 3px 15px rgba(0, 0, 0, 0.7),
-    0 0 60px rgba(78, 227, 143, 0.3);
+    0 0 60px rgba(64, 224, 208, 0.15);
 }
 
 .solares-tagline-vendible {
-  font-size: clamp(1.125rem, 2.2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.4rem);
   font-weight: 300;
   letter-spacing: 0.08em;
   color: rgba(255, 255, 255, 0.9);
@@ -309,10 +309,12 @@
   }
   
   .solares-main-title-vendible {
+    font-size: clamp(2rem, 5.5vw, 3.5rem);
     letter-spacing: 0.1em;
   }
   
   .solares-tagline-vendible {
+    font-size: clamp(0.95rem, 2vw, 1.2rem);
     margin-bottom: 3rem;
   }
 }
