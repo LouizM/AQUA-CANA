@@ -197,14 +197,14 @@
   background-color: var(--color-white);
 }
 
-/* Sección Solares en Preventa - VENDIBLE */
+/* Sección Solares en Preventa - VENDIBLE - Turquesa Verdoso Oscuro */
 .solares-preventa-section-vendible {
   position: relative;
   background: linear-gradient(
     135deg,
-    #003d2d 0%,
-    #002a1f 50%,
-    #003d2d 100%
+    #003D3D 0%,
+    #002D2D 50%,
+    #003D3D 100%
   );
   padding: 0 0 6rem 0;
   overflow: hidden;
