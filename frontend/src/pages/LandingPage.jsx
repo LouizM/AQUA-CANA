@@ -270,31 +270,31 @@ const LandingPage = () => {
                 </div>
               </div>
               
-              {/* Features Vendibles en Columna */}
-              <div className="solares-features-vendibles">
-                <div className="feature-vendible-item">
-                  <div className="feature-vendible-number">01</div>
-                  <div className="feature-vendible-content">
-                    <h4>Desde 250 m²</h4>
-                    <p>Lotes premium para tu proyecto soñado</p>
-                  </div>
-                </div>
-                
-                <div className="feature-vendible-item">
-                  <div className="feature-vendible-number">02</div>
-                  <div className="feature-vendible-content">
-                    <h4>Preventa Exclusiva</h4>
-                    <p>Precios especiales antes del lanzamiento oficial</p>
-                  </div>
-                </div>
-                
-                <div className="feature-vendible-item">
-                  <div className="feature-vendible-number">03</div>
-                  <div className="feature-vendible-content">
-                    <h4>Plusvalía Asegurada</h4>
-                    <p>Ubicación estratégica con proyección de crecimiento</p>
-                  </div>
-                </div>
+              {/* Features Vendibles en Lista con Checks */}
+              <div className="solares-features-list">
+                <ul>
+                  <li>
+                    <Check size={24} />
+                    <div>
+                      <strong>Desde 250 m²</strong>
+                      <span>Lotes premium para tu proyecto soñado</span>
+                    </div>
+                  </li>
+                  <li>
+                    <Check size={24} />
+                    <div>
+                      <strong>Preventa Exclusiva</strong>
+                      <span>Precios especiales antes del lanzamiento oficial</span>
+                    </div>
+                  </li>
+                  <li>
+                    <Check size={24} />
+                    <div>
+                      <strong>Plusvalía Asegurada</strong>
+                      <span>Ubicación estratégica con proyección de crecimiento</span>
+                    </div>
+                  </li>
+                </ul>
               </div>
               
               {/* CTA Grande y Visible */}
