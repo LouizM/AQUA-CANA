@@ -106,7 +106,7 @@ async def create_lead(lead_input: LeadCreate):
         logger.info(f"Lead guardado en DB: {lead.email}")
         
         # Preparar datos para el webhook
-        webhook_url = "https://services.leadconnectorhq.com/hooks/sayt9Q7cq7WxYjLC9dBK/webhook-trigger/7b5dc2f1-4e86-4fe9-a883-20a01aa9c47a"
+        webhook_url = os.environ.get('WEBHOOK_URL')
         
         webhook_payload = {
             "nombre": lead.nombre,
