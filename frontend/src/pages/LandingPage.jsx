@@ -417,30 +417,22 @@ const LandingPage = () => {
       </section>
 
       {/* FOOTER */}
-      <footer className="footer">
+      <footer className="footer-compact">
         <div className="container">
-          <div className="footer-logo">
-            <div className="logo-placeholder">AQUA CANA</div>
-            <p>Country & Residence</p>
-          </div>
-          
-          <div className="footer-content">
-            <p className="footer-location">
-              Punta Cana, República Dominicana
-            </p>
+          <div className="footer-row">
+            <div className="footer-brand">
+              <div className="logo-small">AQUA CANA</div>
+              <p>Country & Residence</p>
+            </div>
             
-            <p className="footer-legal">
-              Proyecto registrado por <strong>Tropical Inmo Dr.</strong>
-            </p>
+            <div className="footer-info">
+              <p>Punta Cana, República Dominicana</p>
+              <p>Proyecto registrado por <strong>Tropical Inmo Dr.</strong></p>
+            </div>
             
-            <p className="footer-disclaimer">
-              Los diseños y medidas están sujetos a cambios y variaciones, no son contractuales. 
-              Proyecto respaldado por garantía escrow.
-            </p>
-          </div>
-          
-          <div className="footer-bottom">
-            <p>&copy; 2025 AQUA CANA Country and Residence. Todos los derechos reservados.</p>
+            <div className="footer-legal">
+              <p>&copy; 2025 AQUA CANA. Todos los derechos reservados.</p>
+            </div>
           </div>
         </div>
       </footer>
