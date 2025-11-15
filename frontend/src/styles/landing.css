@@ -1,12 +1,13 @@
 /* AQUA CANA Landing Page Styles */
 
-/* Variables de Color - Paleta Jade */
+/* Variables de Color - Paleta Jade Real */
 :root {
-  --color-jade-vibrant: #00B894;
-  --color-jade-dark: #00875F;
-  --color-jade-medium: #16C79A;
-  --color-jade-light: #7FDBCA;
-  --color-jade-bg: #C8F5E8;
+  --color-jade-vibrant: #00A86B;
+  --color-jade-dark: #007850;
+  --color-jade-medium: #00C77F;
+  --color-jade-light: #4DE38F;
+  --color-jade-bg: #A8E6CF;
+  --color-jade-accent: #2ECC71;
   --color-white: #FFFFFF;
   --color-black: #1a1a1a;
   --color-gray-light: #f5f5f5;
