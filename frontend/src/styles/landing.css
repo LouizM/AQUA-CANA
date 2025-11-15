@@ -346,216 +346,352 @@
   flex-shrink: 0;
 }
 
-/* Villa Showcase */
-.villa-showcase {
-  margin-top: 3rem;
+/* Villas Carousel Section */
+.villas-carousel-section {
+  padding: 4rem 0;
+  overflow: hidden;
 }
 
-.villa-slider {
+.carousel-header {
+  text-align: center;
   margin-bottom: 3rem;
+  padding: 0 1.5rem;
 }
 
-.villa-slide {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+.carousel-container {
+  position: relative;
+  display: flex;
   align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-@media (min-width: 968px) {
-  .villa-slide {
-    grid-template-columns: 1.2fr 1fr;
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-turquoise-vibrant);
+  color: var(--color-white);
+  border: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 212, 196, 0.4);
+}
+
+.carousel-arrow:hover {
+  background: var(--color-turquoise-dark);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 30px rgba(0, 212, 196, 0.6);
+}
+
+.carousel-arrow.left {
+  left: -20px;
+}
+
+.carousel-arrow.right {
+  right: -20px;
+}
+
+@media (max-width: 768px) {
+  .carousel-arrow {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .carousel-arrow.left {
+    left: 10px;
+  }
+  
+  .carousel-arrow.right {
+    right: 10px;
   }
 }
 
-.villa-image-large {
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-  height: 500px;
+.carousel-content {
+  width: 100%;
+  padding: 0 4rem;
 }
 
-.villa-image-large img {
+@media (max-width: 768px) {
+  .carousel-content {
+    padding: 0 3rem;
+  }
+}
+
+.carousel-slide {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 968px) {
+  .carousel-slide {
+    grid-template-columns: 1.3fr 1fr;
+  }
+}
+
+.carousel-image-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  position: relative;
+  height: 550px;
+}
+
+@media (max-width: 768px) {
+  .carousel-image-wrapper {
+    height: 400px;
+  }
+}
+
+.carousel-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+  transition: transform 0.6s ease;
 }
 
-.villa-info {
+.carousel-image-wrapper:hover .carousel-image {
+  transform: scale(1.05);
+}
+
+.carousel-info {
   text-align: left;
-  padding: 1rem;
+  padding: 2rem;
 }
 
-.villa-name {
-  font-size: 2rem;
+@media (max-width: 768px) {
+  .carousel-info {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+.carousel-villa-header {
+  margin-bottom: 2rem;
+}
+
+.carousel-villa-name {
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
 }
 
-.villa-tagline {
-  font-size: 1rem;
+.carousel-villa-tagline {
+  font-size: 1.125rem;
   font-weight: 600;
   color: var(--color-gray-dark);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 1.5rem;
 }
 
-.villa-price-large {
-  font-size: 2.5rem;
+.carousel-villa-price {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 900;
   color: var(--color-turquoise-vibrant);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1;
 }
 
-.villa-specs-grid {
+.carousel-specs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--color-aqua-light);
+  border-radius: 12px;
 }
 
-.spec-item {
+@media (max-width: 768px) {
+  .carousel-specs {
+    grid-template-columns: 1fr;
+  }
+}
+
+.carousel-spec {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--color-gray-dark);
+  gap: 1rem;
 }
 
-.spec-item svg {
+.carousel-spec svg {
   color: var(--color-turquoise-vibrant);
   flex-shrink: 0;
 }
 
-.villa-features-compact {
-  margin-bottom: 2rem;
+.carousel-spec > div {
+  display: flex;
+  flex-direction: column;
 }
 
-.villa-features-compact ul {
+.spec-number {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-black);
+  line-height: 1;
+}
+
+.spec-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-gray-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.carousel-features {
+  margin-bottom: 2.5rem;
+}
+
+.carousel-features h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.carousel-features ul {
   list-style: none;
   padding: 0;
 }
 
-.villa-features-compact li {
+.carousel-features li {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.4rem 0;
-  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.villa-features-compact svg {
+.carousel-features li:last-child {
+  border-bottom: none;
+}
+
+.carousel-features svg {
   color: var(--color-turquoise-vibrant);
   flex-shrink: 0;
 }
 
-/* Villa Navigation */
-.villa-nav {
+.carousel-cta {
+  width: 100%;
+  background-color: var(--color-turquoise-vibrant);
+  color: var(--color-white);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 1.25rem 2rem;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-cta:hover {
+  background-color: var(--color-turquoise-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 212, 196, 0.4);
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.indicator:hover {
+  border-color: var(--color-turquoise-vibrant);
+  background: rgba(0, 212, 196, 0.05);
+  transform: translateY(-3px);
+}
+
+.indicator.active {
+  border-color: var(--color-turquoise-vibrant);
+  background: var(--color-aqua-light);
+  box-shadow: 0 4px 15px rgba(0, 212, 196, 0.2);
+}
+
+.indicator-number {
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.nav-btn {
   background: var(--color-turquoise-vibrant);
   color: var(--color-white);
-  border: none;
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+  font-weight: 900;
 }
 
-.nav-btn:hover {
+.indicator.active .indicator-number {
   background: var(--color-turquoise-dark);
   transform: scale(1.1);
 }
 
-.villa-dots {
-  display: flex;
-  gap: 0.75rem;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.2);
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.dot.active {
-  background: var(--color-turquoise-vibrant);
-  transform: scale(1.3);
-}
-
-.dot:hover {
-  background: var(--color-turquoise-dark);
-}
-
-/* Villas Grid Compact */
-.villas-grid-compact {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.villa-card-mini {
-  border-radius: 8px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 3px solid transparent;
-}
-
-.villa-card-mini.active {
-  border-color: var(--color-turquoise-vibrant);
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 212, 196, 0.3);
-}
-
-.villa-card-mini:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.villa-card-mini img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-.villa-card-info {
-  padding: 1rem;
-  background: var(--color-white);
-}
-
-.villa-card-info h4 {
-  font-size: 0.9rem;
+.indicator-name {
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 0.25rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--color-black);
 }
 
-.price-mini {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--color-turquoise-vibrant);
-  margin: 0;
+@media (max-width: 768px) {
+  .indicator {
+    min-width: 90px;
+    padding: 0.75rem;
+  }
+  
+  .indicator-name {
+    font-size: 0.65rem;
+  }
 }
 
 /* Amenities Compact */
