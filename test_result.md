@@ -111,23 +111,29 @@ backend:
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: true
         agent: "main"
         comment: "Endpoint implementado con validación de datos, almacenamiento en MongoDB y envío a webhook. Testeado manualmente con curl - funciona correctamente"
+      - working: true
+        agent: "testing"
+        comment: "COMPREHENSIVE TESTING COMPLETED - 15/15 tests passed (100% success rate). Tested: lead creation with valid data, data validation (invalid email, missing fields), different country codes (+1, +34, +52, +1809), multiple leads creation, error handling. All leads saved correctly to MongoDB. Endpoint handles validation errors properly (HTTP 422 for invalid data)."
         
   - task: "Integración con webhook del CRM"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Webhook configurado para enviar a https://services.leadconnectorhq.com/hooks/... Necesita testing con datos reales. El endpoint no falla si el webhook falla."
+      - working: true
+        agent: "testing"
+        comment: "WEBHOOK INTEGRATION VERIFIED - All webhook calls to CRM returning HTTP 200 OK. Backend logs show successful webhook delivery for all test leads. Webhook failures do not affect lead creation (as designed). Integration working correctly with leadconnectorhq.com endpoint."
 
 frontend:
   - task: "Responsive design - Mobile"
