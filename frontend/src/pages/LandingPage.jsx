@@ -321,26 +321,51 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* BLOQUE 4: AMENIDADES */}
-      <section className="section section-base">
-        <div className="container">
+      {/* BLOQUE 4: AMENIDADES CAROUSEL */}
+      <section className="section section-white amenities-carousel-section">
+        <div className="carousel-header">
           <div className="brand-subtle">AQUA CANA Country and Residence</div>
           <h2 className="section-title">AMENIDADES EXCLUSIVAS</h2>
           <p className="section-subtitle">ESTILO DE VIDA DE CLASE MUNDIAL</p>
+        </div>
+        
+        <div className="carousel-container">
+          <button onClick={prevAmenity} className="carousel-arrow left" aria-label="Amenidad anterior">
+            <ChevronDown style={{ transform: 'rotate(90deg)' }} size={48} />
+          </button>
           
-          <div className="amenities-grid-compact">
-            {amenitiesData.map((amenity, index) => {
-              const IconComponent = iconMap[amenity.icon];
-              return (
-                <div key={index} className="amenity-item">
-                  <IconComponent size={28} className="amenity-icon-inline" />
-                  <div>
-                    <h4>{amenity.title}</h4>
-                    <p>{amenity.description}</p>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="carousel-content">
+            <div className="amenity-carousel-slide">
+              <div className="amenity-image-wrapper">
+                <img 
+                  src={amenitiesData[selectedAmenity].imagePlaceholder} 
+                  alt={amenitiesData[selectedAmenity].title}
+                  className="amenity-carousel-image"
+                />
+              </div>
+              
+              <div className="amenity-carousel-info">
+                <h3 className="amenity-carousel-title">{amenitiesData[selectedAmenity].title}</h3>
+                <p className="amenity-carousel-description">{amenitiesData[selectedAmenity].description}</p>
+              </div>
+            </div>
+          </div>
+          
+          <button onClick={nextAmenity} className="carousel-arrow right" aria-label="Siguiente amenidad">
+            <ChevronDown style={{ transform: 'rotate(-90deg)' }} size={48} />
+          </button>
+        </div>
+        
+        <div className="carousel-navigation-dots">
+          <div className="dots-container">
+            {amenitiesData.map((_, index) => (
+              <button
+                key={index}
+                className={`carousel-dot ${index === selectedAmenity ? 'active' : ''}`}
+                onClick={() => setSelectedAmenity(index)}
+                aria-label={`Amenidad ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
       </section>
