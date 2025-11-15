@@ -1835,15 +1835,17 @@
 }
 
 .villa-price-tag {
-  font-size: clamp(1.75rem, 3vw, 2.25rem);
-  font-weight: 900;
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 300;
   color: var(--color-jade-vibrant);
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1.25rem;
   background: var(--color-white);
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 168, 107, 0.15);
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 8px rgba(0, 168, 107, 0.15);
 }
 
 @media (max-width: 768px) {
