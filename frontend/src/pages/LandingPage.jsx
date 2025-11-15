@@ -231,51 +231,59 @@ const LandingPage = () => {
             <div className="solares-text-content">
               <div className="brand-subtle-white">AQUA CANA Country and Residence</div>
               <h2 className="solares-title">OPORTUNIDAD ÚNICA</h2>
-              <p className="solares-subtitle">SOLARES EN PREVENTA</p>
+              <p className="solares-subtitle">SOLARES RESIDENCIALES EN PREVENTA</p>
               
-              <p className="solares-description">
-                Asegura tu inversión en el desarrollo más exclusivo de Punta Cana. 
-                Solares residenciales con ubicación estratégica y alta valorización garantizada.
+              <p className="solares-description-immobiliaria">
+                Invierte en lotes residenciales premium en el desarrollo más exclusivo de Punta Cana. 
+                Ubicación estratégica con acceso a todas las amenidades del proyecto y alta valorización garantizada.
               </p>
               
-              <div className="solares-features">
-                <div className="solar-feature-item">
-                  <Check size={24} className="feature-check" />
-                  <div>
-                    <h4>Desde 250 m²</h4>
-                    <p>Lotes amplios y flexibles</p>
-                  </div>
+              <div className="solares-financiamiento-destacado">
+                <div className="financiamiento-icon">
+                  <Check size={32} />
                 </div>
-                <div className="solar-feature-item">
-                  <Check size={24} className="feature-check" />
-                  <div>
-                    <h4>Precios Variables</h4>
-                    <p>Según metraje seleccionado</p>
-                  </div>
-                </div>
-                <div className="solar-feature-item">
-                  <Check size={24} className="feature-check" />
-                  <div>
-                    <h4>Plusvalía Garantizada</h4>
-                    <p>Ubicación premium en crecimiento</p>
-                  </div>
-                </div>
-                <div className="solar-feature-item">
-                  <Check size={24} className="feature-check" />
-                  <div>
-                    <h4>Preventa Exclusiva</h4>
-                    <p>Mejores precios del mercado</p>
-                  </div>
+                <div className="financiamiento-content">
+                  <h3>FINANCIAMIENTO PROPIO DISPONIBLE</h3>
+                  <p>Facilidades de pago directamente con el desarrollador. Sin intermediarios bancarios.</p>
                 </div>
               </div>
               
-              <Button 
-                onClick={scrollToForm}
-                size="lg"
-                className="solares-cta-button"
-              >
-                SOLICITA INFORMACIÓN
-              </Button>
+              <div className="solares-features-immobiliaria">
+                <div className="solar-feature-card">
+                  <div className="feature-icon-wrapper">
+                    <Maximize size={28} />
+                  </div>
+                  <h4>Desde 250 m²</h4>
+                  <p>Lotes amplios con diseño flexible para construir tu villa ideal</p>
+                </div>
+                
+                <div className="solar-feature-card">
+                  <div className="feature-icon-wrapper">
+                    <Home size={28} />
+                  </div>
+                  <h4>Preventa Exclusiva</h4>
+                  <p>Precios preferenciales antes del lanzamiento oficial al mercado</p>
+                </div>
+                
+                <div className="solar-feature-card">
+                  <div className="feature-icon-wrapper">
+                    <Check size={28} />
+                  </div>
+                  <h4>Plusvalía Asegurada</h4>
+                  <p>Ubicación estratégica en zona de alto crecimiento turístico</p>
+                </div>
+              </div>
+              
+              <div className="solares-cta-section">
+                <Button 
+                  onClick={scrollToForm}
+                  size="lg"
+                  className="solares-cta-button-immobiliaria"
+                >
+                  AGENDA UNA CITA
+                </Button>
+                <p className="solares-cta-subtitle">Consulta con nuestros asesores especializados</p>
+              </div>
             </div>
             
             <div className="solares-image-content">
