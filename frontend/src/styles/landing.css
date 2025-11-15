@@ -2717,27 +2717,34 @@
   flex: 1;
 }
 
-.submit-button-immobiliaria {
+.submit-button-turquesa {
   width: 100%;
-  background: var(--color-jade-dark) !important;
-  color: var(--color-white) !important;
+  background: rgba(64, 224, 208, 0.12) !important;
+  color: rgba(64, 224, 208, 1) !important;
   font-size: 1.125rem !important;
-  font-weight: 700 !important;
-  letter-spacing: 2px !important;
-  padding: 1.25rem 2rem !important;
-  border: none !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.2em !important;
+  padding: 1.5rem 2rem !important;
+  border: 1px solid rgba(64, 224, 208, 0.4) !important;
   border-radius: 2px !important;
   text-transform: uppercase !important;
   cursor: pointer !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
-  transition: all 0.3s ease !important;
-  margin-top: 2rem !important;
+  box-shadow: 
+    0 8px 30px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+  transition: all 0.4s ease !important;
+  margin-top: 2.5rem !important;
+  backdrop-filter: blur(10px) !important;
 }
 
-.submit-button-immobiliaria:hover {
-  background: var(--color-jade-vibrant) !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 8px 30px rgba(0, 168, 107, 0.5) !important;
+.submit-button-turquesa:hover {
+  background: rgba(64, 224, 208, 0.2) !important;
+  border-color: rgba(64, 224, 208, 0.6) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(64, 224, 208, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
 }
 
 @media (max-width: 768px) {
