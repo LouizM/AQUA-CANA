@@ -2163,60 +2163,53 @@
   font-weight: 400;
 }
 
-/* Phone Input Group */
-.phone-input-group {
+/* Phone Input Immobiliaria */
+.phone-input-immobiliaria {
   display: flex;
   gap: 0.75rem;
   align-items: stretch;
 }
 
-@media (max-width: 480px) {
-  .phone-input-group {
-    gap: 0.5rem;
-  }
-}
-
-.country-code-select {
-  padding: 1rem 0.75rem;
-  font-size: 0.95rem;
-  border: 3px solid var(--color-jade-light);
-  border-radius: 8px;
+.country-select-immobiliaria {
+  padding: 1rem 0.875rem;
+  font-size: 1rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
   background: var(--color-white);
   color: var(--color-black);
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 90px;
+  width: 100px;
   flex-shrink: 0;
+  height: 54px;
+}
+
+.country-select-immobiliaria:focus {
+  outline: none;
+  border-color: var(--color-jade-vibrant);
+  box-shadow: 0 0 0 3px rgba(0, 168, 107, 0.08);
+}
+
+.country-select-immobiliaria:hover {
+  border-color: var(--color-jade-vibrant);
 }
 
 @media (max-width: 768px) {
-  .country-code-select {
-    width: 85px;
-    padding: 0.875rem 0.5rem;
-    font-size: 0.875rem;
+  .country-select-immobiliaria {
+    width: 90px;
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 480px) {
-  .country-code-select {
-    width: 80px;
-    font-size: 0.8rem;
-    padding: 0.875rem 0.4rem;
+  .country-select-immobiliaria {
+    width: 85px;
+    font-size: 0.9rem;
   }
 }
 
-.country-code-select:focus {
-  outline: none;
-  border-color: var(--color-jade-vibrant);
-  box-shadow: 0 0 0 4px rgba(0, 168, 107, 0.1);
-}
-
-.country-code-select:hover {
-  border-color: var(--color-jade-vibrant);
-}
-
-.phone-number-input {
+.phone-number-immobiliaria {
   flex: 1;
 }
 
