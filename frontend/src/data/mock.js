@@ -161,7 +161,7 @@ export const amenitiesData = [
     title: "SENDERO ECOLÓGICO",
     description: "Conexión con la naturaleza en caminos diseñados",
     icon: "tree-pine",
-    imagePlaceholder: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/bkuqqpdw_sendero%20ecologico.jpg"
   },
   {
     title: "ESPACIOS COMERCIALES",
