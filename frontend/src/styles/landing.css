@@ -626,12 +626,13 @@
 }
 
 .carousel-villa-name {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.5rem, 4vw, 3rem);
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 0.75rem;
   line-height: 1.1;
+  color: var(--color-jade-dark);
 }
 
 .carousel-villa-tagline {
