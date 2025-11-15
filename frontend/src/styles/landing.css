@@ -1887,14 +1887,16 @@
 
 @media (max-width: 768px) {
   .villa-main-image-container {
-    height: 400px;
+    height: 350px;
     border-radius: 12px;
   }
 }
 
 @media (max-width: 480px) {
   .villa-main-image-container {
-    height: 320px;
+    height: 280px;
+    border-radius: 10px;
+    border: 2px solid var(--color-jade-light);
   }
 }
 
