@@ -792,9 +792,9 @@ const LandingPage = () => {
             <Button 
               type="submit"
               size="lg"
-              className="submit-button-immobiliaria"
+              className="submit-button-turquesa"
             >
-              RECIBIR ASESORÍA EXCLUSIVA
+              SOLICITAR MI CONTACTO
             </Button>
             
             <p className="form-privacy-immobiliaria">
