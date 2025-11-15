@@ -117,7 +117,7 @@
 }
 
 .section-base {
-  background-color: var(--color-jade-bg);
+  background: linear-gradient(135deg, var(--color-jade-bg) 0%, #B5F0E0 100%);
 }
 
 .section-white {
