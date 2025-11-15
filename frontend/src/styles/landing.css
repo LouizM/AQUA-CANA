@@ -1152,6 +1152,55 @@
   color: #999;
 }
 
+/* Phone Input Group */
+.phone-input-group {
+  display: flex;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+@media (max-width: 480px) {
+  .phone-input-group {
+    gap: 0.5rem;
+  }
+}
+
+.country-code-select {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 3px solid var(--color-jade-light);
+  border-radius: 8px;
+  background: var(--color-white);
+  color: var(--color-black);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 110px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .country-code-select {
+    min-width: 95px;
+    font-size: 0.9rem;
+    padding: 0.875rem 0.5rem;
+  }
+}
+
+.country-code-select:focus {
+  outline: none;
+  border-color: var(--color-jade-vibrant);
+  box-shadow: 0 0 0 4px rgba(0, 168, 107, 0.1);
+}
+
+.country-code-select:hover {
+  border-color: var(--color-jade-vibrant);
+}
+
+.phone-number-input {
+  flex: 1;
+}
+
 .submit-button-centered {
   width: 100%;
   background: linear-gradient(135deg, var(--color-jade-vibrant) 0%, var(--color-jade-accent) 100%);
