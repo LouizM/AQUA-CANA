@@ -184,34 +184,6 @@ const LandingPage = () => {
         <div className="hero-overlay"></div>
         
         <div className="hero-content">
-          <div className="hero-logo">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_luxury-residence-1/artifacts/nwtwpl95_Icono%20rosado.png" 
-              alt="AQUA CANA Icon" 
-              className="hero-icon"
-            />
-            <div className="logo-box">
-              <div className="logo-text">
-                <span className="logo-main">AQUA CANA</span>
-                <span className="logo-subtitle">COUNTRY AND RESIDENCE</span>
-              </div>
-            </div>
-          </div>
-          
-          <h1 className="hero-title">LA VILLA DE TUS SUEÑOS</h1>
-          <p className="hero-subtitle">EN EL CORAZÓN DEL CARIBE</p>
-          
-          <div className="hero-badge-inicial">
-            <span className="badge-inicial-text">0% DE INICIAL</span>
-          </div>
-          
-          <Button 
-            onClick={scrollToForm}
-            className="hero-cta"
-            size="lg"
-          >
-            SOLICITA INFORMACIÓN
-          </Button>
         </div>
       </section>
 
