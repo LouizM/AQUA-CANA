@@ -38,6 +38,28 @@ class StatusCheck(BaseModel):
 class StatusCheckCreate(BaseModel):
     client_name: str
 
+# Lead Model
+class Lead(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+    
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    nombre: str
+    codigoPais: str = "+1"
+    telefono: str
+    email: EmailStr
+    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+class LeadCreate(BaseModel):
+    nombre: str
+    codigoPais: str = "+1"
+    telefono: str
+    email: EmailStr
+
+class LeadResponse(BaseModel):
+    success: bool
+    message: str
+    lead_id: Optional[str] = None
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
