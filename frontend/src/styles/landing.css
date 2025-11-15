@@ -668,12 +668,28 @@
   padding: 1.5rem;
   background: linear-gradient(135deg, var(--color-jade-bg) 0%, var(--color-jade-light) 100%);
   border-radius: 12px;
-  border: 2px solid var(--color-jade-light);
+  border: 3px solid var(--color-jade-medium);
+}
+
+@media (max-width: 968px) {
+  .carousel-specs {
+    gap: 1rem;
+    padding: 1.25rem;
+  }
 }
 
 @media (max-width: 768px) {
   .carousel-specs {
     grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-specs {
+    padding: 0.75rem;
   }
 }
 
