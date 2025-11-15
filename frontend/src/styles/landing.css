@@ -2424,8 +2424,8 @@
 }
 
 .amenity-carousel-description {
-  font-size: clamp(1.2rem, 2.3vw, 1.65rem);
-  line-height: 2;
+  font-size: clamp(1.05rem, 2vw, 1.4rem);
+  line-height: 1.8;
   color: var(--color-gray-dark);
   font-weight: 300;
   position: relative;
