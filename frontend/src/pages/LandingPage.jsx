@@ -148,69 +148,38 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* BLOQUE 2: SOLARES EN PREVENTA */}
+      {/* BLOQUE 2: SOLARES + OPORTUNIDAD */}
       <section className="section section-base">
         <div className="container">
           <div className="brand-subtle">AQUA CANA Country and Residence</div>
           <h2 className="section-title">OPORTUNIDAD ÚNICA</h2>
-          <p className="section-subtitle">SOLARES EN PREVENTA</p>
+          <p className="section-subtitle">INVERSIÓN EN EL PARAÍSO</p>
           
-          <div className="content-block">
-            <p className="text-large">
-              Invierte en tu futuro con solares desde <strong>250 m²</strong> en el desarrollo 
-              más exclusivo de Punta Cana. Diseñados para transmitir libertad, espacio y privacidad.
-            </p>
-            
-            <div className="features-grid">
-              <div className="feature-card">
-                <Maximize className="feature-icon" size={40} />
-                <h3>Desde 250 m²</h3>
-                <p>Amplios terrenos para tu proyecto ideal</p>
-              </div>
-              
-              <div className="feature-card">
-                <Home className="feature-icon" size={40} />
-                <h3>Diseño Exclusivo</h3>
-                <p>Lotes conceptualizados para máxima privacidad</p>
-              </div>
-              
-              <div className="feature-card">
-                <Shield className="feature-icon" size={40} />
-                <h3>Plusvalía Garantizada</h3>
-                <p>Ubicación estratégica con alta valorización</p>
-              </div>
+          <div className="two-col-layout">
+            <div className="col-content">
+              <h3 className="col-title">SOLARES EN PREVENTA</h3>
+              <p className="col-text">
+                Invierte en tu futuro con solares desde <strong>250 m²</strong> en el desarrollo 
+                más exclusivo de Punta Cana. Ubicación estratégica con alta valorización garantizada.
+              </p>
+              <ul className="benefit-list">
+                <li><Check size={20} /> Desde 250 m² de terreno</li>
+                <li><Check size={20} /> Diseño para máxima privacidad</li>
+                <li><Check size={20} /> Plusvalía garantizada</li>
+                <li><Check size={20} /> Financiamiento disponible</li>
+              </ul>
             </div>
             
-            <Button 
-              onClick={scrollToForm}
-              size="lg"
-              className="cta-button"
-            >
-              CONSULTAR DISPONIBILIDAD
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* BLOQUE 3: VILLAS DISPONIBLES INTRO */}
-      <section className="section section-white">
-        <div className="container">
-          <div className="brand-subtle">AQUA CANA Country and Residence</div>
-          <h2 className="section-title">VILLAS DISPONIBLES</h2>
-          <p className="section-subtitle">DISEÑO Y ELEGANCIA</p>
-          
-          <div className="content-block">
-            <p className="text-large">
-              Cada villa está construida con <strong>materiales de primera calidad</strong> y 
-              acabados de lujo que reflejan elegancia y confort en cada detalle.
-            </p>
-            
-            <div className="construction-features">
-              <h3 className="features-title">Construcción y Acabados Premium</h3>
-              <ul className="features-list">
+            <div className="col-content">
+              <h3 className="col-title">ACABADOS PREMIUM</h3>
+              <p className="col-text">
+                Cada villa está construida con <strong>materiales de primera calidad</strong> 
+                que reflejan elegancia y confort en cada detalle.
+              </p>
+              <ul className="benefit-list">
                 {constructionFeatures.map((feature, index) => (
                   <li key={index}>
-                    <Check className="check-icon" size={20} />
+                    <Check size={20} />
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -220,74 +189,108 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* BLOQUES 4-8: VILLAS INDIVIDUALES */}
-      {villasData.map((villa, index) => (
-        <section 
-          key={villa.id}
-          className={`section ${index % 2 === 0 ? 'section-base' : 'section-white'}`}
-        >
-          <div className="container">
-            <div className="brand-subtle">AQUA CANA Country and Residence</div>
-            <h2 className="section-title">{villa.name}</h2>
-            <p className="section-subtitle">{villa.subtitle}</p>
-            
-            <div className="villa-content">
-              <div className="villa-image">
-                <img 
-                  src={villa.imagePlaceholder} 
-                  alt={villa.name}
-                  loading="lazy"
-                />
+      {/* BLOQUE 3: VILLAS SHOWCASE */}
+      <section className="section section-white">
+        <div className="container">
+          <div className="brand-subtle">AQUA CANA Country and Residence</div>
+          <h2 className="section-title">VILLAS DISPONIBLES</h2>
+          <p className="section-subtitle">DISEÑO Y ELEGANCIA</p>
+          
+          <div className="villa-showcase">
+            <div className="villa-slider">
+              <div className="villa-slide">
+                <div className="villa-image-large">
+                  <img 
+                    src={villasData[selectedVilla].imagePlaceholder} 
+                    alt={villasData[selectedVilla].name}
+                  />
+                </div>
+                
+                <div className="villa-info">
+                  <h3 className="villa-name">{villasData[selectedVilla].name}</h3>
+                  <p className="villa-tagline">{villasData[selectedVilla].subtitle}</p>
+                  <div className="villa-price-large">{villasData[selectedVilla].price}</div>
+                  
+                  <div className="villa-specs-grid">
+                    <div className="spec-item">
+                      <Bed size={28} />
+                      <span>{villasData[selectedVilla].bedrooms} Habitaciones</span>
+                    </div>
+                    <div className="spec-item">
+                      <Bath size={28} />
+                      <span>{villasData[selectedVilla].bathrooms} Baños</span>
+                    </div>
+                    {villasData[selectedVilla].lotSize && (
+                      <div className="spec-item">
+                        <Maximize size={28} />
+                        <span>Terreno: {villasData[selectedVilla].lotSize}</span>
+                      </div>
+                    )}
+                    <div className="spec-item">
+                      <Home size={28} />
+                      <span>Construcción: {villasData[selectedVilla].constructionSize}</span>
+                    </div>
+                  </div>
+                  
+                  <div className="villa-features-compact">
+                    <ul>
+                      {villasData[selectedVilla].features.map((feature, idx) => (
+                        <li key={idx}>
+                          <Check size={18} />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <Button 
+                    onClick={scrollToForm}
+                    size="lg"
+                    className="cta-button"
+                  >
+                    QUIERO ESTA VILLA
+                  </Button>
+                </div>
               </div>
               
-              <div className="villa-details">
-                <div className="villa-price">{villa.price}</div>
-                
-                <div className="villa-specs">
-                  <div className="spec">
-                    <Bed size={24} />
-                    <span>{villa.bedrooms} Habitaciones</span>
-                  </div>
-                  <div className="spec">
-                    <Bath size={24} />
-                    <span>{villa.bathrooms} Baños</span>
-                  </div>
-                  {villa.lotSize && (
-                    <div className="spec">
-                      <Maximize size={24} />
-                      <span>Terreno: {villa.lotSize}</span>
-                    </div>
-                  )}
-                  <div className="spec">
-                    <Home size={24} />
-                    <span>Construcción: {villa.constructionSize}</span>
-                  </div>
+              <div className="villa-nav">
+                <button onClick={prevVilla} className="nav-btn prev">
+                  <ChevronDown style={{ transform: 'rotate(90deg)' }} size={32} />
+                </button>
+                <div className="villa-dots">
+                  {villasData.map((_, index) => (
+                    <button
+                      key={index}
+                      className={`dot ${index === selectedVilla ? 'active' : ''}`}
+                      onClick={() => setSelectedVilla(index)}
+                      aria-label={`Villa ${index + 1}`}
+                    />
+                  ))}
                 </div>
-                
-                <div className="villa-features">
-                  <h3>Características Destacadas</h3>
-                  <ul>
-                    {villa.features.map((feature, idx) => (
-                      <li key={idx}>
-                        <Check size={18} />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                
-                <Button 
-                  onClick={scrollToForm}
-                  size="lg"
-                  className="cta-button"
-                >
-                  QUIERO ESTA VILLA
-                </Button>
+                <button onClick={nextVilla} className="nav-btn next">
+                  <ChevronDown style={{ transform: 'rotate(-90deg)' }} size={32} />
+                </button>
               </div>
             </div>
+            
+            <div className="villas-grid-compact">
+              {villasData.map((villa, index) => (
+                <div 
+                  key={villa.id}
+                  className={`villa-card-mini ${index === selectedVilla ? 'active' : ''}`}
+                  onClick={() => setSelectedVilla(index)}
+                >
+                  <img src={villa.imagePlaceholder} alt={villa.name} />
+                  <div className="villa-card-info">
+                    <h4>{villa.name}</h4>
+                    <p className="price-mini">{villa.price}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </section>
-      ))}
+        </div>
+      </section>
 
       {/* BLOQUE 9: AMENIDADES */}
       <section className="section section-white">
