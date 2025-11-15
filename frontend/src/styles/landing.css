@@ -123,6 +123,26 @@
   background: linear-gradient(135deg, var(--color-jade-bg) 0%, #B5F0E0 100%);
 }
 
+.section-jade-dark {
+  background: linear-gradient(135deg, var(--color-jade-dark) 0%, #005F42 100%);
+}
+
+.section-jade-dark .section-title,
+.section-jade-dark .section-subtitle,
+.section-jade-dark .brand-subtle,
+.section-jade-dark .text-large,
+.section-jade-dark .col-title {
+  color: var(--color-white);
+}
+
+.section-jade-dark .benefit-list li {
+  color: var(--color-white);
+}
+
+.section-jade-dark .benefit-list svg {
+  color: var(--color-jade-light);
+}
+
 .section-white {
   background-color: var(--color-white);
 }
