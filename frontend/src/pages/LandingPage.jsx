@@ -292,39 +292,31 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* BLOQUE 9: AMENIDADES */}
-      <section className="section section-white">
+      {/* BLOQUE 4: AMENIDADES */}
+      <section className="section section-base">
         <div className="container">
           <div className="brand-subtle">AQUA CANA Country and Residence</div>
           <h2 className="section-title">AMENIDADES EXCLUSIVAS</h2>
-          <p className="section-subtitle">DE CLASE MUNDIAL</p>
+          <p className="section-subtitle">ESTILO DE VIDA DE CLASE MUNDIAL</p>
           
-          <div className="amenities-grid">
+          <div className="amenities-grid-compact">
             {amenitiesData.map((amenity, index) => {
               const IconComponent = iconMap[amenity.icon];
               return (
-                <div key={index} className="amenity-card">
-                  <div className="amenity-icon">
-                    <IconComponent size={32} />
+                <div key={index} className="amenity-item">
+                  <IconComponent size={28} className="amenity-icon-inline" />
+                  <div>
+                    <h4>{amenity.title}</h4>
+                    <p>{amenity.description}</p>
                   </div>
-                  <h3>{amenity.title}</h3>
-                  <p>{amenity.description}</p>
                 </div>
               );
             })}
           </div>
-          
-          <div className="amenities-highlight">
-            <p className="text-large">
-              Disfruta de un estilo de vida único con acceso a amenidades diseñadas 
-              para el <strong>bienestar, entretenimiento y convivencia familiar</strong> en 
-              un entorno seguro y exclusivo.
-            </p>
-          </div>
         </div>
       </section>
 
-      {/* BLOQUE 10: FORM + CTA */}
+      {/* BLOQUE 5: FORM + CTA */}
       <section id="form-section" className="section section-base">
         <div className="container">
           <div className="brand-subtle">AQUA CANA Country and Residence</div>
