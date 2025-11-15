@@ -247,10 +247,46 @@
 }
 
 .hero-logo {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-logo {
+    gap: 1.25rem;
+    margin-bottom: 1.75rem;
+  }
+}
+
+.hero-icon {
+  width: 120px;
+  height: auto;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .hero-icon {
+    width: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-icon {
+    width: 80px;
+  }
+}
+
+@keyframes floatIcon {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .logo-box {
