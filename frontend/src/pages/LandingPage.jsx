@@ -215,27 +215,22 @@ const LandingPage = () => {
           </Button>        </div>
       </section>
 
-      {/* BLOQUE 2: SOLARES EN PREVENTA */}
-      <section className="section solares-preventa-section">
-        <div className="solares-video-background">
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            className="solares-background-video"
-          >
-            <source src="https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/csufgkvs_solares%20video.mp4" type="video/mp4" />
-          </video>
-          <div className="solares-video-overlay"></div>
+      {/* BLOQUE 2: SOLARES EN PREVENTA - VENDIBLE */}
+      <section className="section solares-preventa-section-vendible">
+        {/* Cinta Animada - OPORTUNIDAD ÚNICA */}
+        <div className="solares-marquee-wrapper">
+          <div className="solares-marquee">
+            <span className="marquee-text">OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • </span>
+            <span className="marquee-text">OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • </span>
+          </div>
         </div>
         
-        <div className="container solares-content-wrapper">
-          <div className="solares-content-grid">
-            <div className="solares-text-content">
-              <div className="brand-subtle-white">AQUA CANA Country and Residence</div>
-              <h2 className="solares-title">OPORTUNIDAD ÚNICA</h2>
-              <p className="solares-subtitle">SOLARES RESIDENCIALES EN PREVENTA</p>
+        <div className="container solares-content-wrapper-vendible">
+          <div className="brand-subtle-white-vendible">AQUA CANA Country and Residence</div>
+          
+          {/* Título Principal Vendible */}
+          <h2 className="solares-main-title-vendible">SOLARES EN PREVENTA</h2>
+          <p className="solares-tagline-vendible">Tu inversión en el paraíso caribeño comienza aquí</p>
               
               <p className="solares-description-immobiliaria">
                 Adquiere tu lote residencial en el desarrollo más exclusivo de Punta Cana. 
