@@ -22,7 +22,11 @@ export const villasData = [
       "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/f6i9moa7_Correccion%20perspectiva%20derecha.RGB_color%20copia.jpg",
       "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/4v2scujv_Sala%20viendo%20hacia%20la%20entrada%20copia.jpg",
       "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/z5paka57_Sala%20viendo%20hacia%20cocina%20copia.jpg",
-      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/d12hwsxi_Cocina%20viendo%20hacia%20sala%20copia.jpg"
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/d12hwsxi_Cocina%20viendo%20hacia%20sala%20copia.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/gpd6tzux_Cocina%20N2%20copia.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/8yvki2js_Cocina%20viendo%20hacia%20jacuzzi%20copia.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/yvda7vag_Ba%C3%B1o%20alcobas%20copia.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/8dqrjovs_Habitacion%20N3%20copia.jpg"
     ]
   },
   {
