@@ -2169,6 +2169,15 @@
 .villa-spec-item svg {
   color: var(--color-jade-vibrant);
   flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+}
+
+@media (max-width: 480px) {
+  .villa-spec-item svg {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .villa-spec-item div {
