@@ -247,8 +247,8 @@ const LandingPage = () => {
                   <Check size={32} />
                 </div>
                 <div className="financiamiento-content">
-                  <h3>FINANCIAMIENTO PROPIO DISPONIBLE</h3>
-                  <p>Facilidades de pago directamente con el desarrollador. Sin intermediarios bancarios.</p>
+                  <h3>SISTEMA DE FINANCIAMIENTO DISPONIBLE</h3>
+                  <p>Facilidades de pago flexibles directamente con el desarrollador para hacer realidad tu inversión.</p>
                 </div>
               </div>
               
