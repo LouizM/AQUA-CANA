@@ -1,6 +1,6 @@
 // Mock data para AQUA CANA Landing Page
 
-export constvillasData = [
+export const villasData = [
   {
     id: 1,
     name: "VILLA LARIMAR JR",
