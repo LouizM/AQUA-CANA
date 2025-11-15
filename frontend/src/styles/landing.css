@@ -498,8 +498,15 @@
 
 .carousel-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
   padding: 0 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-header {
+    margin-bottom: 2.5rem;
+    padding: 0 1rem;
+  }
 }
 
 .carousel-container {
