@@ -962,39 +962,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-}
-
-.overlay-isotipo-top {
-  width: 70px;
-  height: auto;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
 }
 
 .overlay-logo-box {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.75rem 1.5rem;
-  border: 2px solid var(--color-white);
+  padding: 1rem 2rem;
+  border: 3px solid var(--color-white);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-}
-
-.overlay-isotipo-inside {
-  width: 35px;
-  height: auto;
 }
 
 .overlay-logo-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.25rem;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .overlay-logo-main {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 900;
   letter-spacing: 0.2em;
   color: var(--color-white);
@@ -1002,9 +987,9 @@
 }
 
 .overlay-logo-subtitle {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 600;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.2em;
   color: var(--color-white);
   opacity: 0.9;
 }
