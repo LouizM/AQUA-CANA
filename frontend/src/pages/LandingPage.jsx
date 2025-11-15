@@ -204,42 +204,83 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* BLOQUE 2: SOLARES + OPORTUNIDAD */}
-      <section className="section section-jade-dark">
-        <div className="container">
-          <div className="brand-subtle">AQUA CANA Country and Residence</div>
-          <h2 className="section-title">OPORTUNIDAD ÚNICA</h2>
-          <p className="section-subtitle">INVERSIÓN EN EL PARAÍSO</p>
-          
-          <div className="two-col-layout">
-            <div className="col-content">
-              <h3 className="col-title">SOLARES EN PREVENTA</h3>
-              <p className="col-text">
-                Invierte en tu futuro con solares desde <strong>250 m²</strong> en el desarrollo 
-                más exclusivo de Punta Cana. Ubicación estratégica con alta valorización garantizada.
+      {/* BLOQUE 2: SOLARES EN PREVENTA */}
+      <section className="section solares-preventa-section">
+        <div className="solares-video-background">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="solares-background-video"
+          >
+            <source src="https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/csufgkvs_solares%20video.mp4" type="video/mp4" />
+          </video>
+          <div className="solares-video-overlay"></div>
+        </div>
+        
+        <div className="container solares-content-wrapper">
+          <div className="solares-content-grid">
+            <div className="solares-text-content">
+              <div className="brand-subtle-white">AQUA CANA Country and Residence</div>
+              <h2 className="solares-title">OPORTUNIDAD ÚNICA</h2>
+              <p className="solares-subtitle">SOLARES EN PREVENTA</p>
+              
+              <p className="solares-description">
+                Asegura tu inversión en el desarrollo más exclusivo de Punta Cana. 
+                Solares residenciales con ubicación estratégica y alta valorización garantizada.
               </p>
-              <ul className="benefit-list">
-                <li><Check size={20} /> Desde 250 m² de terreno</li>
-                <li><Check size={20} /> Diseño para máxima privacidad</li>
-                <li><Check size={20} /> Plusvalía garantizada</li>
-                <li><Check size={20} /> Financiamiento disponible</li>
-              </ul>
+              
+              <div className="solares-features">
+                <div className="solar-feature-item">
+                  <Check size={24} className="feature-check" />
+                  <div>
+                    <h4>Desde 250 m²</h4>
+                    <p>Lotes amplios y flexibles</p>
+                  </div>
+                </div>
+                <div className="solar-feature-item">
+                  <Check size={24} className="feature-check" />
+                  <div>
+                    <h4>Precios Variables</h4>
+                    <p>Según metraje seleccionado</p>
+                  </div>
+                </div>
+                <div className="solar-feature-item">
+                  <Check size={24} className="feature-check" />
+                  <div>
+                    <h4>Plusvalía Garantizada</h4>
+                    <p>Ubicación premium en crecimiento</p>
+                  </div>
+                </div>
+                <div className="solar-feature-item">
+                  <Check size={24} className="feature-check" />
+                  <div>
+                    <h4>Preventa Exclusiva</h4>
+                    <p>Mejores precios del mercado</p>
+                  </div>
+                </div>
+              </div>
+              
+              <Button 
+                onClick={scrollToForm}
+                size="lg"
+                className="solares-cta-button"
+              >
+                SOLICITA INFORMACIÓN
+              </Button>
             </div>
             
-            <div className="col-content">
-              <h3 className="col-title">ACABADOS PREMIUM</h3>
-              <p className="col-text">
-                Cada villa está construida con <strong>materiales de primera calidad</strong> 
-                que reflejan elegancia y confort en cada detalle.
-              </p>
-              <ul className="benefit-list">
-                {constructionFeatures.map((feature, index) => (
-                  <li key={index}>
-                    <Check size={20} />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
+            <div className="solares-image-content">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/9aoaobhm_solares%20en%20preventa.jpeg"
+                alt="Solares en preventa - Vista aérea"
+                className="solares-preview-image"
+              />
+              <div className="solares-image-badge">
+                <span className="badge-text">PREVENTA</span>
+                <span className="badge-subtext">Precios especiales</span>
+              </div>
             </div>
           </div>
         </div>
