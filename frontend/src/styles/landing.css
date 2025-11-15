@@ -2213,46 +2213,57 @@
   flex: 1;
 }
 
-.submit-button-centered {
+.submit-button-immobiliaria {
   width: 100%;
-  background: linear-gradient(135deg, var(--color-jade-vibrant) 0%, var(--color-jade-accent) 100%);
-  color: var(--color-white);
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  padding: 1.25rem;
-  border: none;
-  border-radius: 8px;
-  text-transform: uppercase;
-  cursor: pointer;
-  box-shadow: 0 8px 30px rgba(0, 168, 107, 0.4);
-  transition: all 0.3s ease;
-  margin-top: 1rem;
+  background: var(--color-jade-dark) !important;
+  color: var(--color-white) !important;
+  font-size: 1.125rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  padding: 1.25rem 2rem !important;
+  border: none !important;
+  border-radius: 2px !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+  transition: all 0.3s ease !important;
+  margin-top: 2rem !important;
 }
 
-.submit-button-centered:hover {
-  background: linear-gradient(135deg, var(--color-jade-dark) 0%, var(--color-jade-vibrant) 100%);
-  transform: translateY(-3px);
-  box-shadow: 0 12px 40px rgba(0, 168, 107, 0.5);
+.submit-button-immobiliaria:hover {
+  background: var(--color-jade-vibrant) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 30px rgba(0, 168, 107, 0.5) !important;
 }
 
 @media (max-width: 768px) {
-  .submit-button-centered {
-    font-size: 1.125rem;
-    padding: 1rem;
+  .submit-button-immobiliaria {
+    font-size: 1rem !important;
+    padding: 1.125rem 1.5rem !important;
+    letter-spacing: 1.5px !important;
   }
 }
 
-.form-privacy-centered {
+@media (max-width: 480px) {
+  .submit-button-immobiliaria {
+    font-size: 0.95rem !important;
+    padding: 1rem !important;
+  }
+}
+
+.form-privacy-immobiliaria {
   font-size: 0.8rem;
-  color: var(--color-gray-dark);
-  margin-top: 1rem;
+  color: #666;
+  margin-top: 1.5rem;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 480px) {
-  .form-privacy-centered {
+  .form-privacy-immobiliaria {
     font-size: 0.75rem;
   }
 }
