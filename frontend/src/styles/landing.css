@@ -1407,6 +1407,26 @@
   }
 }
 
+@media (max-width: 480px) {
+  .carousel-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel-arrow.left {
+    left: 0.25rem;
+  }
+  
+  .carousel-arrow.right {
+    right: 0.25rem;
+  }
+  
+  .carousel-arrow svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .carousel-content {
   width: 100%;
   padding: 0 4rem;
