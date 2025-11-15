@@ -293,89 +293,145 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* BLOQUE 3: VILLAS CAROUSEL */}
-      <section className="section section-white villas-carousel-section">
+      {/* BLOQUE 3: VILLAS CON GALERÍA INMOBILIARIA */}
+      <section className="section section-white villas-gallery-section">
         <div className="carousel-header">
           <div className="brand-subtle">AQUA CANA Country and Residence</div>
           <h2 className="section-title">VILLAS DISPONIBLES</h2>
-          <p className="section-subtitle">DISEÑO Y ELEGANCIA</p>
+          <p className="section-subtitle">EXPLORA CADA DETALLE</p>
         </div>
         
-        <div className="carousel-container">
+        <div className="villas-gallery-container">
           <button onClick={prevVilla} className="carousel-arrow left" aria-label="Villa anterior">
             <ChevronDown style={{ transform: 'rotate(90deg)' }} size={48} />
           </button>
           
-          <div className="carousel-content">
-            <div className="carousel-slide">
-              <div className="carousel-image-wrapper">
-                <img 
-                  src={villasData[selectedVilla].imagePlaceholder} 
-                  alt={villasData[selectedVilla].name}
-                  className="carousel-image"
-                />
+          <div className="villa-content-wrapper">
+            <div className="villa-gallery-grid">
+              {/* Columna Izquierda: Galería de Imágenes */}
+              <div className="villa-gallery-column">
+                <div className="villa-main-image-container">
+                  <img 
+                    src={
+                      selectedGalleryImage[villasData[selectedVilla].id] || 
+                      villasData[selectedVilla].imagePlaceholder
+                    }
+                    alt={villasData[selectedVilla].name}
+                    className="villa-main-image"
+                  />
+                  <div className="villa-image-counter">
+                    {villasData[selectedVilla].gallery.length > 0 ? (
+                      <span>
+                        {villasData[selectedVilla].gallery.findIndex(
+                          img => img === selectedGalleryImage[villasData[selectedVilla].id]
+                        ) + 2} / {villasData[selectedVilla].gallery.length + 1}
+                      </span>
+                    ) : (
+                      <span>1 / 1</span>
+                    )}
+                  </div>
+                </div>
+                
+                {/* Galería de Miniaturas */}
+                <div className="villa-thumbnails-wrapper">
+                  <div className="villa-thumbnails-scroll">
+                    {/* Thumbnail principal */}
+                    <div 
+                      className={`villa-thumbnail ${
+                        !selectedGalleryImage[villasData[selectedVilla].id] ? 'active' : ''
+                      }`}
+                      onClick={() => setSelectedGalleryImage(prev => ({
+                        ...prev,
+                        [villasData[selectedVilla].id]: null
+                      }))}
+                    >
+                      <img 
+                        src={villasData[selectedVilla].imagePlaceholder}
+                        alt="Vista principal"
+                      />
+                      <div className="thumbnail-label">Principal</div>
+                    </div>
+                    
+                    {/* Thumbnails de galería */}
+                    {villasData[selectedVilla].gallery.map((image, idx) => (
+                      <div 
+                        key={idx}
+                        className={`villa-thumbnail ${
+                          selectedGalleryImage[villasData[selectedVilla].id] === image ? 'active' : ''
+                        }`}
+                        onClick={() => selectGalleryImage(villasData[selectedVilla].id, image)}
+                      >
+                        <img src={image} alt={`Vista ${idx + 2}`} />
+                        <div className="thumbnail-label">{idx + 2}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
               
-              <div className="carousel-info">
-                <div className="carousel-villa-header">
-                  <h3 className="carousel-villa-name">{villasData[selectedVilla].name}</h3>
-                  <p className="carousel-villa-tagline">{villasData[selectedVilla].subtitle}</p>
-                </div>
-                
-                <div className="carousel-villa-price">{villasData[selectedVilla].price}</div>
-                
-                <div className="carousel-specs">
-                  <div className="carousel-spec">
-                    <Bed size={32} />
-                    <div>
-                      <span className="spec-number">{villasData[selectedVilla].bedrooms}</span>
-                      <span className="spec-label">Habitaciones</span>
-                    </div>
+              {/* Columna Derecha: Información de la Villa */}
+              <div className="villa-info-column">
+                <div className="villa-info-content">
+                  <div className="villa-header">
+                    <h3 className="villa-name">{villasData[selectedVilla].name}</h3>
+                    <p className="villa-tagline">{villasData[selectedVilla].subtitle}</p>
                   </div>
-                  <div className="carousel-spec">
-                    <Bath size={32} />
-                    <div>
-                      <span className="spec-number">{villasData[selectedVilla].bathrooms}</span>
-                      <span className="spec-label">Baños</span>
-                    </div>
-                  </div>
-                  {villasData[selectedVilla].lotSize && (
-                    <div className="carousel-spec">
-                      <Maximize size={32} />
+                  
+                  <div className="villa-price-tag">{villasData[selectedVilla].price}</div>
+                  
+                  <div className="villa-specs-grid">
+                    <div className="villa-spec-item">
+                      <Bed size={28} />
                       <div>
-                        <span className="spec-number">{villasData[selectedVilla].lotSize}</span>
-                        <span className="spec-label">Terreno</span>
+                        <span className="spec-number">{villasData[selectedVilla].bedrooms}</span>
+                        <span className="spec-label">Habitaciones</span>
                       </div>
                     </div>
-                  )}
-                  <div className="carousel-spec">
-                    <Home size={32} />
-                    <div>
-                      <span className="spec-number">{villasData[selectedVilla].constructionSize}</span>
-                      <span className="spec-label">Construcción</span>
+                    <div className="villa-spec-item">
+                      <Bath size={28} />
+                      <div>
+                        <span className="spec-number">{villasData[selectedVilla].bathrooms}</span>
+                        <span className="spec-label">Baños</span>
+                      </div>
+                    </div>
+                    {villasData[selectedVilla].lotSize && (
+                      <div className="villa-spec-item">
+                        <Maximize size={28} />
+                        <div>
+                          <span className="spec-number">{villasData[selectedVilla].lotSize}</span>
+                          <span className="spec-label">Terreno</span>
+                        </div>
+                      </div>
+                    )}
+                    <div className="villa-spec-item">
+                      <Home size={28} />
+                      <div>
+                        <span className="spec-number">{villasData[selectedVilla].constructionSize}</span>
+                        <span className="spec-label">Construcción</span>
+                      </div>
                     </div>
                   </div>
+                  
+                  <div className="villa-features-list">
+                    <h4>Características Destacadas</h4>
+                    <ul>
+                      {villasData[selectedVilla].features.map((feature, idx) => (
+                        <li key={idx}>
+                          <Check size={20} />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <Button 
+                    onClick={scrollToForm}
+                    size="lg"
+                    className="villa-cta-button"
+                  >
+                    QUIERO ESTA VILLA
+                  </Button>
                 </div>
-                
-                <div className="carousel-features">
-                  <h4>Características Destacadas</h4>
-                  <ul>
-                    {villasData[selectedVilla].features.map((feature, idx) => (
-                      <li key={idx}>
-                        <Check size={20} />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                
-                <Button 
-                  onClick={scrollToForm}
-                  size="lg"
-                  className="carousel-cta"
-                >
-                  QUIERO ESTA VILLA
-                </Button>
               </div>
             </div>
           </div>
