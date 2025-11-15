@@ -221,17 +221,25 @@
 .logo-main {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 900;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.6em;
   color: var(--color-white);
   line-height: 1;
-  font-stretch: expanded;
-  transform: scaleX(1.15);
+  font-stretch: extra-expanded;
+  transform: scaleX(1.3);
+  display: inline-block;
 }
 
 @media (max-width: 768px) {
   .logo-main {
-    letter-spacing: 0.35em;
-    transform: scaleX(1.1);
+    letter-spacing: 0.5em;
+    transform: scaleX(1.25);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-main {
+    letter-spacing: 0.45em;
+    transform: scaleX(1.2);
   }
 }
 
