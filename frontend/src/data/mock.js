@@ -75,7 +75,9 @@ export const villasData = [
       "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/4iynfp34_4.%20Vista%20Sala%202.jpeg",
       "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/d561xi4s_5.%20Vista%20Comedor.jpeg",
       "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/rrcuqi14_6.%20Vista%20Cocina.jpeg",
-      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/ejhhi4u8_7.%20Vista%20Habitaci%C3%B3n.jpeg"
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/ejhhi4u8_7.%20Vista%20Habitaci%C3%B3n.jpeg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/100bd934_8.%20Vista%20Posterior.jpeg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/f888ogv1_9.%20Plantas.jpg"
     ]
   },
   {
