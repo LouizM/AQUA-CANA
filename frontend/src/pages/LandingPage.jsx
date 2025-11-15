@@ -164,14 +164,6 @@ const LandingPage = () => {
           >
             APLICA AHORA
           </Button>
-          
-          <button 
-            onClick={scrollToForm}
-            className="scroll-indicator"
-            aria-label="Scroll down"
-          >
-            <ChevronDown size={32} />
-          </button>
         </div>
       </section>
 
