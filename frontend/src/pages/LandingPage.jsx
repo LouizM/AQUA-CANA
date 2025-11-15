@@ -232,68 +232,71 @@ const LandingPage = () => {
           <h2 className="solares-main-title-vendible">SOLARES EN PREVENTA</h2>
           <p className="solares-tagline-vendible">Tu inversión en el paraíso caribeño comienza aquí</p>
               
-              <p className="solares-description-immobiliaria">
-                Adquiere tu lote residencial en el desarrollo más exclusivo de Punta Cana. 
-                Ubicación privilegiada con acceso directo a todas las amenidades y plusvalía garantizada.
-              </p>
-              
-              <div className="solares-financiamiento-destacado">
-                <div className="financiamiento-icon">
-                  <Check size={32} />
-                </div>
-                <div className="financiamiento-content">
-                  <h3>SISTEMA DE FINANCIAMIENTO DISPONIBLE</h3>
-                  <p>Facilidades de pago flexibles directamente con el desarrollador para hacer realidad tu inversión.</p>
-                </div>
-              </div>
-              
-              <div className="solares-features-immobiliaria">
-                <div className="solar-feature-card">
-                  <div className="feature-icon-wrapper">
-                    <Maximize size={28} />
-                  </div>
-                  <h4>Desde 250 m²</h4>
-                  <p>Lotes premium con diseño flexible para tu proyecto residencial soñado</p>
-                </div>
-                
-                <div className="solar-feature-card">
-                  <div className="feature-icon-wrapper">
-                    <Home size={28} />
-                  </div>
-                  <h4>Preventa Exclusiva</h4>
-                  <p>Precios especiales por lanzamiento antes del público general</p>
-                </div>
-                
-                <div className="solar-feature-card">
-                  <div className="feature-icon-wrapper">
-                    <Check size={28} />
-                  </div>
-                  <h4>Plusvalía Garantizada</h4>
-                  <p>Zona de alto crecimiento con proyección de valorización sostenida</p>
-                </div>
-              </div>
-              
-              <div className="solares-cta-section">
-                <Button 
-                  onClick={scrollToForm}
-                  size="lg"
-                  className="solares-cta-button-immobiliaria"
-                >
-                  AGENDA TU VISITA
-                </Button>
-                <p className="solares-cta-subtitle">Consulta disponibilidad con nuestros asesores</p>
-              </div>
-            </div>
-            
-            <div className="solares-image-content">
+          {/* Grid de Contenido Vendible */}
+          <div className="solares-vendible-grid">
+            {/* Columna Principal - Imagen Grande */}
+            <div className="solares-image-principal">
               <img 
                 src="https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/9aoaobhm_solares%20en%20preventa.jpeg"
                 alt="Solares en preventa - Vista aérea"
-                className="solares-preview-image"
+                className="solares-main-image-vendible"
               />
-              <div className="solares-image-badge">
-                <span className="badge-text">PREVENTA</span>
-                <span className="badge-subtext">Precios especiales</span>
+              <div className="solares-badge-urgencia">
+                <span className="badge-urgencia-icon">⚡</span>
+                <span className="badge-urgencia-text">ÚLTIMOS LOTES DISPONIBLES</span>
+              </div>
+            </div>
+            
+            {/* Columna de Ventas - Info y CTAs */}
+            <div className="solares-ventas-column">
+              {/* Financiamiento Destacado */}
+              <div className="solares-financiamiento-vendible">
+                <div className="financiamiento-badge-yellow">
+                  <Check size={36} />
+                </div>
+                <div className="financiamiento-text-vendible">
+                  <h3>SISTEMA DE FINANCIAMIENTO</h3>
+                  <p>Facilidades de pago directas con el desarrollador</p>
+                </div>
+              </div>
+              
+              {/* Features Vendibles en Columna */}
+              <div className="solares-features-vendibles">
+                <div className="feature-vendible-item">
+                  <div className="feature-vendible-number">01</div>
+                  <div className="feature-vendible-content">
+                    <h4>Desde 250 m²</h4>
+                    <p>Lotes premium para tu proyecto soñado</p>
+                  </div>
+                </div>
+                
+                <div className="feature-vendible-item">
+                  <div className="feature-vendible-number">02</div>
+                  <div className="feature-vendible-content">
+                    <h4>Preventa Exclusiva</h4>
+                    <p>Precios especiales antes del lanzamiento oficial</p>
+                  </div>
+                </div>
+                
+                <div className="feature-vendible-item">
+                  <div className="feature-vendible-number">03</div>
+                  <div className="feature-vendible-content">
+                    <h4>Plusvalía Asegurada</h4>
+                    <p>Ubicación estratégica con proyección de crecimiento</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* CTA Grande y Visible */}
+              <div className="solares-cta-vendible">
+                <Button 
+                  onClick={scrollToForm}
+                  size="lg"
+                  className="solares-cta-button-vendible"
+                >
+                  RESERVA TU LOTE AHORA
+                </Button>
+                <p className="solares-cta-urgencia">⏱️ Plazos limitados · Consulta disponibilidad inmediata</p>
               </div>
             </div>
           </div>
