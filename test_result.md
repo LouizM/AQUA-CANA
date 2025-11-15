@@ -159,6 +159,9 @@ frontend:
       - working: true
         agent: "main"
         comment: "Formulario conectado al backend. Envía datos a POST /api/leads. Muestra overlay de confirmación al éxito. Maneja errores correctamente."
+      - working: true
+        agent: "main"
+        comment: "Frontend completamente optimizado. Necesita testing end-to-end completo del flujo de captura de leads."
 
   - task: "Texto del botón CTA del formulario"
     implemented: true
