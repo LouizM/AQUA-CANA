@@ -797,8 +797,8 @@ const LandingPage = () => {
               SOLICITAR MI CONTACTO
             </Button>
             
-            <p className="form-privacy-immobiliaria">
-              Tu información está protegida. Al enviar este formulario aceptas que un asesor especializado te contacte.
+            <p className="form-privacy-turquesa">
+              Tu información está segura con nosotros
             </p>
           </form>
         </div>
