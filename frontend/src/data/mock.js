@@ -97,7 +97,11 @@ export const villasData = [
     ],
     imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/qfuz191v_villa%20bahia%20serena.jpg",
     gallery: [
-      // Aquí se agregarán las imágenes de la galería
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/w7ec7zsm_Exterior%20conjunto.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/i8f8hb17_Sala.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/bsdmkdgo_Cocina-2.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/krxhrxtp_Planta%20ambientada%201erN.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/mx7shr5x_Planta%20ambientada%202doN-3.jpg"
     ]
   },
   {
