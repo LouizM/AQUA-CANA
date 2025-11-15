@@ -2016,35 +2016,64 @@
   }
 }
 
-.form-section-title {
-  font-size: clamp(1.75rem, 5vw, 3rem);
-  font-weight: 900;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+.form-header-immobiliaria {
   text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.form-brand-mark {
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--color-jade-light);
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+.form-title-immobiliaria {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   color: var(--color-white);
-  margin-bottom: 3.5rem;
-  line-height: 1.4;
-  max-width: 900px;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 0 2rem;
+}
+
+.form-subtitle-immobiliaria {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
   padding: 0 2rem;
 }
 
 @media (max-width: 768px) {
-  .form-section-title {
-    font-size: 1.5rem;
-    margin-bottom: 2.5rem;
-    padding: 0 1.5rem;
-    line-height: 1.5;
+  .form-header-immobiliaria {
+    margin-bottom: 3rem;
   }
-}
-
-@media (max-width: 480px) {
-  .form-section-title {
-    font-size: 1.25rem;
-    padding: 0 1rem;
+  
+  .form-brand-mark {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+  }
+  
+  .form-title-immobiliaria {
+    padding: 0 1.5rem;
+  }
+  
+  .form-subtitle-immobiliaria {
+    font-size: 0.95rem;
+    padding: 0 1.5rem;
   }
 }
 
