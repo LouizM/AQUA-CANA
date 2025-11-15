@@ -61,10 +61,16 @@ const LandingPage = () => {
 
   const nextVilla = () => {
     setSelectedVilla((prev) => (prev + 1) % villasData.length);
+    setSelectedGalleryImage({});
   };
 
   const prevVilla = () => {
     setSelectedVilla((prev) => (prev - 1 + villasData.length) % villasData.length);
+    setSelectedGalleryImage({});
+  };
+  
+  const selectGalleryImage = (villaId, imageUrl) => {
+    setSelectedGalleryImage({ [villaId]: imageUrl });
   };
 
   const nextAmenity = () => {
