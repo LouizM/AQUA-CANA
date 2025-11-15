@@ -1,10 +1,12 @@
 /* AQUA CANA Landing Page Styles */
 
-/* Variables de Color */
+/* Variables de Color - Paleta Jade */
 :root {
-  --color-turquoise-vibrant: #00D4C4;
-  --color-turquoise-dark: #00A38C;
-  --color-aqua-light: #E0FFFF;
+  --color-jade-vibrant: #00B894;
+  --color-jade-dark: #00875F;
+  --color-jade-medium: #16C79A;
+  --color-jade-light: #7FDBCA;
+  --color-jade-bg: #C8F5E8;
   --color-white: #FFFFFF;
   --color-black: #1a1a1a;
   --color-gray-light: #f5f5f5;
