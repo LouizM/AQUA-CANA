@@ -2006,12 +2006,15 @@
 @media (max-width: 768px) {
   .villa-thumbnail {
     border-radius: 8px;
+    border: 2px solid transparent;
   }
 }
 
 @media (max-width: 480px) {
   .villa-thumbnail {
     border-radius: 6px;
+    border: 2px solid transparent;
+    aspect-ratio: 3 / 2;
   }
 }
 
