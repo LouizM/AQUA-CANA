@@ -38,6 +38,14 @@ const LandingPage = () => {
     setSelectedVilla((prev) => (prev - 1 + villasData.length) % villasData.length);
   };
 
+  const nextAmenity = () => {
+    setSelectedAmenity((prev) => (prev + 1) % amenitiesData.length);
+  };
+
+  const prevAmenity = () => {
+    setSelectedAmenity((prev) => (prev - 1 + amenitiesData.length) % amenitiesData.length);
+  };
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
