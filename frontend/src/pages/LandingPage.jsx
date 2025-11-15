@@ -85,6 +85,15 @@ const LandingPage = () => {
 
   return (
     <div className="landing-container">
+      {/* Logo Superior Izquierda */}
+      <div className="top-logo">
+        <img 
+          src="https://customer-assets.emergentagent.com/job_luxury-residence-1/artifacts/zapy5jdt_transparente.png" 
+          alt="AQUA CANA Logo" 
+          className="top-logo-image"
+        />
+      </div>
+
       {/* Overlay de Confirmación */}
       {showOverlay && (
         <div className="overlay-confirmation">
