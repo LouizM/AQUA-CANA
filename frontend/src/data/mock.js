@@ -125,7 +125,9 @@ export const villasData = [
       "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/2nh4281h_Villa%20Mare%20Deluxe.jpeg",
       "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/moy6hcxp_Villa%20Mare%20-%20Sala-2.jpg",
       "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/2ieqv3vz_Villa%20Mare%20-%20Cocina%202.jpg",
-      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/7wnw9t44_Villa%20Mare%20-%20Cocina%202-3.jpg"
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/7wnw9t44_Villa%20Mare%20-%20Cocina%202-3.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/g6smdnru_Villa%20Mare%20-%20Comedor.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/efugxc7u_Villa%20Mare%20-%20Habitacion.jpg"
     ]
   }
 ];
