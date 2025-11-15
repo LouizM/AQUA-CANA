@@ -2302,6 +2302,14 @@
   }
 }
 
+@media (max-width: 480px) {
+  .villa-cta-button {
+    padding: 1.125rem 1.5rem !important;
+    font-size: 0.95rem !important;
+    letter-spacing: 0.05em;
+  }
+}
+
 /* Amenities Carousel */
 /* Amenities Section - Estilo Inmobiliario Urbanístico Caribeño */
 .amenities-carousel-section {
