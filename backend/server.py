@@ -89,6 +89,67 @@ async def get_status_checks():
     
     return status_checks
 
+@api_router.post("/leads", response_model=LeadResponse)
+async def create_lead(lead_input: LeadCreate):
+    """
+    Endpoint para capturar leads del formulario y enviarlos al webhook del CRM
+    """
+    try:
+        # Crear objeto Lead con timestamp
+        lead = Lead(**lead_input.model_dump())
+        
+        # Guardar en MongoDB
+        lead_doc = lead.model_dump()
+        lead_doc['created_at'] = lead_doc['created_at'].isoformat()
+        
+        await db.leads.insert_one(lead_doc)
+        logger.info(f"Lead guardado en DB: {lead.email}")
+        
+        # Preparar datos para el webhook
+        webhook_url = "https://services.leadconnectorhq.com/hooks/sayt9Q7cq7WxYjLC9dBK/webhook-trigger/7b5dc2f1-4e86-4fe9-a883-20a01aa9c47a"
+        
+        webhook_payload = {
+            "nombre": lead.nombre,
+            "telefono": f"{lead.codigoPais}{lead.telefono}",
+            "email": lead.email,
+            "fecha": lead.created_at.isoformat()
+        }
+        
+        # Enviar al webhook
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            try:
+                response = await client.post(webhook_url, json=webhook_payload)
+                response.raise_for_status()
+                logger.info(f"Webhook enviado exitosamente para: {lead.email}")
+            except httpx.HTTPError as webhook_error:
+                logger.error(f"Error al enviar webhook: {str(webhook_error)}")
+                # No fallamos la request aunque el webhook falle
+                # El lead ya está guardado en la DB
+        
+        return LeadResponse(
+            success=True,
+            message="Lead registrado exitosamente",
+            lead_id=lead.id
+        )
+        
+    except Exception as e:
+        logger.error(f"Error al crear lead: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error al procesar el lead: {str(e)}")
+
+@api_router.get("/leads", response_model=List[Lead])
+async def get_leads():
+    """
+    Endpoint para obtener todos los leads guardados
+    """
+    leads = await db.leads.find({}, {"_id": 0}).to_list(1000)
+    
+    # Convert ISO string timestamps back to datetime objects
+    for lead in leads:
+        if isinstance(lead.get('created_at'), str):
+            lead['created_at'] = datetime.fromisoformat(lead['created_at'])
+    
+    return leads
+
 # Include the router in the main app
 app.include_router(api_router)
 
