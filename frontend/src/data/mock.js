@@ -16,7 +16,7 @@ export const villasData = [
       "Estacionamiento",
       "Terreno privado"
     ],
-    imagePlaceholder: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/7xhl9ivq_villa%20larimar%20jr.jpg"
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ export const villasData = [
       "2 parqueos",
       "Patio con jacuzzi opcional"
     ],
-    imagePlaceholder: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/7swkqqiz_villa%20larimar.jpg"
   },
   {
     id: 3,
@@ -51,7 +51,7 @@ export const villasData = [
       "Patio trasero con jacuzzi",
       "2 parqueos"
     ],
-    imagePlaceholder: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/a1eas28q_villa%20los%20angeles.jpeg"
   },
   {
     id: 4,
@@ -68,7 +68,7 @@ export const villasData = [
       "Jacuzzi incluido",
       "2 parqueos"
     ],
-    imagePlaceholder: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/qfuz191v_villa%20bahia%20serena.jpg"
   },
   {
     id: 5,
@@ -85,7 +85,7 @@ export const villasData = [
       "Jacuzzi opcional en terraza o patio",
       "2 parqueos"
     ],
-    imagePlaceholder: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/o388xsh8_Villa%20Mare%20Deluxe%20P.jpeg"
   }
 ];
 
