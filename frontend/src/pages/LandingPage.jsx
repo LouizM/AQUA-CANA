@@ -522,10 +522,10 @@ const LandingPage = () => {
           <div className="form-header-immobiliaria">
             <div className="form-brand-mark">AQUA CANA</div>
             <h2 className="form-title-immobiliaria">
-              DA EL PRIMER PASO HACIA<br/>TU INVERSIÓN EN EL PARAÍSO
+              COMIENZA TU INVERSIÓN<br/>EN EL PARAÍSO CARIBEÑO
             </h2>
             <p className="form-subtitle-immobiliaria">
-              Completa el formulario y un asesor exclusivo te contactará en menos de 24 horas
+              Déjanos tus datos y un asesor especializado te contactará en las próximas 24 horas
             </p>
           </div>
           
