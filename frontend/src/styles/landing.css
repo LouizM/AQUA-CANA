@@ -2425,12 +2425,12 @@
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
 }
 
-/* Form Section - Diseño Minimalista Inmobiliario */
+/* Form Section - Turquesa Elegante y Minimalista */
 .section-form-immobiliaria {
   background: linear-gradient(
     180deg,
-    #003d2d 0%,
-    #002a1f 100%
+    #003D3D 0%,
+    #002D2D 100%
   );
   padding: 8rem 0 10rem 0;
   position: relative;
@@ -2440,13 +2440,13 @@
 .section-form-immobiliaria::before {
   content: '';
   position: absolute;
-  top: -50%;
+  top: -30%;
   left: -10%;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   background: radial-gradient(
     circle,
-    rgba(78, 227, 143, 0.08) 0%,
+    rgba(64, 224, 208, 0.06) 0%,
     transparent 70%
   );
   pointer-events: none;
@@ -2457,11 +2457,11 @@
   position: absolute;
   bottom: -30%;
   right: -10%;
-  width: 600px;
-  height: 600px;
+  width: 700px;
+  height: 700px;
   background: radial-gradient(
     circle,
-    rgba(78, 227, 143, 0.06) 0%,
+    rgba(64, 224, 208, 0.05) 0%,
     transparent 70%
   );
   pointer-events: none;
