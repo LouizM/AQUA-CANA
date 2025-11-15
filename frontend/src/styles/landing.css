@@ -2258,6 +2258,15 @@
 .villa-features-list li svg {
   color: var(--color-jade-vibrant);
   flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 480px) {
+  .villa-features-list li svg {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .villa-cta-button {
