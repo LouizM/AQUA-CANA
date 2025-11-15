@@ -231,18 +231,55 @@ REACT_APP_BACKEND_URL=<already configured>
 - Música de fondo (simulado con console.log)
 - Ubicación: `LandingPage.jsx` useEffect línea 28-31
 
-### 12. NOTAS IMPORTANTES
+### 12. ESTRUCTURA OPTIMIZADA (5 SECCIONES)
 
-- Video ya está integrado desde los assets del usuario
+**Bloque 1: Hero**
+- Imagen de playa artificial (reemplazó el video)
+- Logo placeholder AQUA CANA
+- CTA principal "APLICA AHORA"
+- Scroll indicator animado
+
+**Bloque 2: Oportunidad Única**
+- Solares en Preventa + Acabados Premium (dos columnas)
+- Consolidación de información de inversión
+- Beneficios destacados con checkmarks
+
+**Bloque 3: Villas Disponibles**
+- Carousel interactivo de 5 villas
+- Navegación con flechas y dots
+- Grid de thumbnails clickeables
+- Información detallada de cada villa
+
+**Bloque 4: Amenidades Exclusivas**
+- Layout compacto tipo lista con iconos inline
+- 8 amenidades presentadas eficientemente
+- Estilo profesional y limpio
+
+**Bloque 5: Formulario + CTA**
+- Formulario de conversión con 3 campos
+- Beneficios de garantía escrow
+- Overlay de confirmación post-envío
+
+**Footer Compacto:**
+- Diseño horizontal de 3 columnas
+- Información esencial condensada
+- Logo pequeño + info legal + copyright
+
+### 13. NOTAS IMPORTANTES
+
+- **Hero con imagen** de playa artificial (URL: customer-assets.emergentagent.com)
+- Estructura reducida de 10 a **5 bloques principales**
 - Todas las imágenes de villas son placeholders de alta calidad de Unsplash
+- **Villa carousel** con navegación interactiva (prev/next + dots)
 - El diseño es 100% responsive (Mobile-First)
 - Colores sólidos sin gradientes según especificaciones
 - Todos los títulos en MAYÚSCULAS según requerimientos
 - Alternancia de fondos turquesa/blanco funciona correctamente
 - Overlay de confirmación funciona perfectamente
-- Footer con información legal completa
+- Footer compacto y profesional
+- **Espacio optimizado** - menos distracciones, mejor distribución
 
 ---
 
 **Última actualización:** 15 de Enero, 2025  
-**Estado:** Frontend completo y funcional - Pendiente aprobación de diseño para proceder con backend
+**Estado:** Frontend optimizado (5 secciones) y funcional - Pendiente aprobación de diseño para proceder con backend
