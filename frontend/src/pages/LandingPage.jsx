@@ -113,19 +113,12 @@ const LandingPage = () => {
 
       {/* BLOQUE 1: HERO */}
       <section className="hero-section">
-        <video 
-          ref={videoRef}
-          className="hero-video"
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-        >
-          <source 
-            src="https://customer-assets.emergentagent.com/job_luxury-residence-1/artifacts/l7qf86xu_Aqua%20Cana%20Video%20%28sin%20logo%29.mp4" 
-            type="video/mp4" 
-          />
-        </video>
+        <div 
+          className="hero-image"
+          style={{
+            backgroundImage: 'url(https://customer-assets.emergentagent.com/job_luxury-residence-1/artifacts/05qbiqdg_playa%20artificial.jpg)'
+          }}
+        ></div>
         
         <div className="hero-overlay"></div>
         
