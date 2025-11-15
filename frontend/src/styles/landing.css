@@ -288,14 +288,16 @@
 .feature-card {
   background: var(--color-white);
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  border: 2px solid var(--color-jade-light);
+  box-shadow: 0 6px 25px rgba(0, 168, 107, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 35px rgba(0, 168, 107, 0.25);
+  border-color: var(--color-jade-vibrant);
 }
 
 .feature-icon {
