@@ -370,8 +370,10 @@
 .col-content {
   background: var(--color-white);
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: left;
+  border: 3px solid var(--color-jade-light);
+  box-shadow: 0 8px 25px rgba(0, 184, 148, 0.15);
 }
 
 .col-title {
