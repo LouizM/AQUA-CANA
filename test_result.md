@@ -101,3 +101,86 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Landing page profesional para Aqua Cana con formulario de captura de leads que se integra con webhook del CRM. La página debe ser completamente responsive (desktop y mobile)."
+
+backend:
+  - task: "Endpoint POST /api/leads para capturar leads"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Endpoint implementado con validación de datos, almacenamiento en MongoDB y envío a webhook. Testeado manualmente con curl - funciona correctamente"
+        
+  - task: "Integración con webhook del CRM"
+    implemented: true
+    working: "NA"
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Webhook configurado para enviar a https://services.leadconnectorhq.com/hooks/... Necesita testing con datos reales. El endpoint no falla si el webhook falla."
+
+frontend:
+  - task: "Responsive design - Mobile"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/styles/landing.css"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Fix aplicado a los thumbnails de villa gallery para que se adapten correctamente en mobile. Grid responsive implementado correctamente en todas las secciones."
+        
+  - task: "Formulario de leads - Frontend"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/LandingPage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Formulario conectado al backend. Envía datos a POST /api/leads. Muestra overlay de confirmación al éxito. Maneja errores correctamente."
+
+  - task: "Texto del botón CTA del formulario"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/LandingPage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Texto del botón ya estaba como 'APLICAR AHORA' desde el fork anterior. Verificado en línea 797."
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: true
+
+test_plan:
+  current_focus:
+    - "Formulario de leads end-to-end (frontend + backend + webhook)"
+    - "Responsive design en mobile (todas las secciones)"
+    - "UX y fluidez general de la página"
+  stuck_tasks: []
+  test_all: true
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: "He completado las siguientes tareas: 1) Fix responsive mobile (thumbnails de galería), 2) Implementación backend del endpoint /api/leads con integración a webhook, 3) Conexión frontend al backend. Necesito testing completo de: formulario end-to-end, responsive mobile en todas las secciones, y UX general. El botón CTA ya tenía el texto correcto 'APLICAR AHORA'."
