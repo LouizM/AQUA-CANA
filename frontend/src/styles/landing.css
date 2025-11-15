@@ -1968,15 +1968,51 @@
   padding-top: 0.5rem;
 }
 
-/* Form Section Dark */
-.section-form-dark {
-  background: linear-gradient(135deg, var(--color-jade-dark) 0%, #005F42 100%);
-  padding: 6rem 0;
+/* Form Section - Diseño Minimalista Inmobiliario */
+.section-form-immobiliaria {
+  background: linear-gradient(
+    180deg,
+    #003d2d 0%,
+    #002a1f 100%
+  );
+  padding: 8rem 0 10rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-form-immobiliaria::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(78, 227, 143, 0.08) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.section-form-immobiliaria::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(78, 227, 143, 0.06) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
 }
 
 @media (max-width: 768px) {
-  .section-form-dark {
-    padding: 4rem 0;
+  .section-form-immobiliaria {
+    padding: 5rem 0 6rem 0;
   }
 }
 
