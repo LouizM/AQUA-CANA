@@ -2050,8 +2050,9 @@
 
 @media (max-width: 480px) {
   .thumbnail-label {
-    font-size: 0.7rem;
-    padding: 0.3rem;
+    font-size: 0.625rem;
+    padding: 0.25rem;
+    letter-spacing: 0.02em;
   }
 }
 
