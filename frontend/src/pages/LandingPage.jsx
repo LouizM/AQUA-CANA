@@ -284,9 +284,9 @@ const LandingPage = () => {
                   size="lg"
                   className="solares-cta-button-immobiliaria"
                 >
-                  AGENDA UNA CITA
+                  AGENDA TU VISITA
                 </Button>
-                <p className="solares-cta-subtitle">Consulta con nuestros asesores especializados</p>
+                <p className="solares-cta-subtitle">Consulta disponibilidad con nuestros asesores</p>
               </div>
             </div>
             
