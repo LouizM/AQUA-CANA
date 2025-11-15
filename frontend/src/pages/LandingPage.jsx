@@ -27,9 +27,7 @@ const LandingPage = () => {
     email: ''
   });
   const [showOverlay, setShowOverlay] = useState(false);
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-  const videoRef = useRef(null);
-  const audioRef = useRef(null);
+  const [selectedVilla, setSelectedVilla] = useState(0);
 
   useEffect(() => {
     // Simular reproducción de audio ASMR + música
