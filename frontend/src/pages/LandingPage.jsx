@@ -178,6 +178,11 @@ const LandingPage = () => {
         
         <div className="hero-content">
           <div className="hero-logo">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_luxury-residence-1/artifacts/nwtwpl95_Icono%20rosado.png" 
+              alt="AQUA CANA Icon" 
+              className="hero-icon"
+            />
             <div className="logo-box">
               <div className="logo-text">
                 <span className="logo-main">AQUA CANA</span>
