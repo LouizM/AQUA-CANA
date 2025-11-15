@@ -446,7 +446,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: var(--color-jade-vibrant);
+  background: linear-gradient(135deg, var(--color-jade-vibrant) 0%, var(--color-jade-accent) 100%);
   color: var(--color-white);
   border: none;
   width: 70px;
@@ -458,13 +458,13 @@
   cursor: pointer;
   z-index: 10;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 212, 196, 0.4);
+  box-shadow: 0 6px 25px rgba(0, 168, 107, 0.5);
 }
 
 .carousel-arrow:hover {
-  background: var(--color-jade-dark);
+  background: linear-gradient(135deg, var(--color-jade-dark) 0%, var(--color-jade-vibrant) 100%);
   transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 6px 30px rgba(0, 212, 196, 0.6);
+  box-shadow: 0 8px 35px rgba(0, 168, 107, 0.6);
 }
 
 .carousel-arrow.left {
@@ -475,18 +475,38 @@
   right: -20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .carousel-arrow {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
   }
   
   .carousel-arrow.left {
-    left: 10px;
+    left: 5px;
   }
   
   .carousel-arrow.right {
-    right: 10px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-arrow {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .carousel-arrow.left {
+    left: 0.5rem;
+  }
+  
+  .carousel-arrow.right {
+    right: 0.5rem;
+  }
+  
+  .carousel-arrow svg {
+    width: 28px;
+    height: 28px;
   }
 }
 
