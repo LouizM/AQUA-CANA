@@ -29,11 +29,13 @@ const LandingPage = () => {
   const [showOverlay, setShowOverlay] = useState(false);
   const [selectedVilla, setSelectedVilla] = useState(0);
 
-  useEffect(() => {
-    // Simular reproducción de audio ASMR + música
-    // En producción, aquí irían los archivos de audio reales
-    console.log('Audio ASMR del mar y música de fondo iniciados (simulado)');
-  }, []);
+  const nextVilla = () => {
+    setSelectedVilla((prev) => (prev + 1) % villasData.length);
+  };
+
+  const prevVilla = () => {
+    setSelectedVilla((prev) => (prev - 1 + villasData.length) % villasData.length);
+  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
