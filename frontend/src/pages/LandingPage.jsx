@@ -31,6 +31,7 @@ const LandingPage = () => {
   const [selectedVilla, setSelectedVilla] = useState(0);
   const [selectedAmenity, setSelectedAmenity] = useState(0);
   const [showScrollHint, setShowScrollHint] = useState(false);
+  const [selectedGalleryImage, setSelectedGalleryImage] = useState({});
 
   useEffect(() => {
     let scrollTimer;
