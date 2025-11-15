@@ -259,11 +259,12 @@
 }
 
 .logo-subtitle {
-  font-size: clamp(0.75rem, 1.5vw, 1rem);
+  font-size: clamp(0.625rem, 1.5vw, 0.875rem);
   font-weight: 600;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   color: var(--color-white);
-  opacity: 0.9;
+  opacity: 0.95;
+  white-space: nowrap;
 }
 
 .hero-title {
