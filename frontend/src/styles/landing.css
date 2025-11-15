@@ -602,10 +602,22 @@
   padding: 2rem;
 }
 
+@media (max-width: 968px) {
+  .carousel-info {
+    padding: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .carousel-info {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-info {
+    padding: 1rem 0.5rem;
   }
 }
 
