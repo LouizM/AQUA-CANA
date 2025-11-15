@@ -28,6 +28,80 @@
   line-height: 1.6;
 }
 
+/* Scroll Hints */
+.scroll-hints {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 999;
+  animation: fadeIn 0.5s ease;
+}
+
+.scroll-hint {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-white);
+  animation: pulseScroll 2s ease-in-out infinite;
+}
+
+.scroll-hint-left {
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-hint-right {
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .scroll-hint-left {
+    left: 1rem;
+  }
+  
+  .scroll-hint-right {
+    right: 1rem;
+  }
+}
+
+.scroll-hint svg {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.scroll-hint span {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .scroll-hint span {
+    font-size: 0.75rem;
+  }
+}
+
+@keyframes pulseScroll {
+  0%, 100% {
+    opacity: 0.5;
+    transform: translateY(-50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-40%);
+  }
+}
+
 /* Top Logo */
 .top-logo {
   position: fixed;
