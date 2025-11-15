@@ -25,6 +25,43 @@
   line-height: 1.6;
 }
 
+/* Top Logo */
+.top-logo {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.top-logo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.top-logo-image {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .top-logo {
+    top: 1rem;
+    left: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .top-logo-image {
+    height: 40px;
+  }
+}
+
 /* Typography */
 .section-title {
   font-size: clamp(2rem, 5vw, 3.5rem);
