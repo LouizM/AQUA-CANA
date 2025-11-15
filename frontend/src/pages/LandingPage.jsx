@@ -146,17 +146,7 @@ const LandingPage = () => {
         
         <div className="hero-content">
           <div className="hero-logo">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_luxury-residence-1/artifacts/bdm3xyz6_blanco.png" 
-              alt="Isotipo AQUA CANA" 
-              className="logo-isotipo-top"
-            />
             <div className="logo-box">
-              <img 
-                src="https://customer-assets.emergentagent.com/job_luxury-residence-1/artifacts/bdm3xyz6_blanco.png" 
-                alt="Isotipo AQUA CANA" 
-                className="logo-isotipo-inside"
-              />
               <div className="logo-text">
                 <span className="logo-main">AQUA CANA</span>
                 <span className="logo-subtitle">COUNTRY AND RESIDENCE</span>
