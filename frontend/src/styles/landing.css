@@ -296,22 +296,22 @@
 }
 
 .logo-box {
-  padding: 1.5rem 4.5rem;
-  border: 3px solid var(--color-white);
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  padding: 1.25rem 3.5rem;
+  border: 2px solid var(--color-white);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
   min-width: fit-content;
 }
 
 @media (max-width: 768px) {
   .logo-box {
-    padding: 1.25rem 3.5rem;
+    padding: 1rem 2.75rem;
   }
 }
 
 @media (max-width: 480px) {
   .logo-box {
-    padding: 1rem 2.5rem;
+    padding: 0.875rem 2rem;
   }
 }
 
