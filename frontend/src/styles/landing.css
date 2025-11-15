@@ -695,7 +695,7 @@
 
 @media (max-width: 968px) {
   .carousel-specs {
-    gap: 1rem;
+    gap: 1.25rem;
     padding: 1.25rem;
   }
 }
@@ -703,15 +703,17 @@
 @media (max-width: 768px) {
   .carousel-specs {
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 1.25rem;
+    padding: 1.25rem;
     margin-bottom: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .carousel-specs {
-    padding: 0.75rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
   }
 }
 
