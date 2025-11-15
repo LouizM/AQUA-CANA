@@ -585,8 +585,9 @@
   gap: 1.5rem;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background: var(--color-jade-bg);
+  background: linear-gradient(135deg, var(--color-jade-bg) 0%, var(--color-jade-light) 100%);
   border-radius: 12px;
+  border: 2px solid var(--color-jade-light);
 }
 
 @media (max-width: 768px) {
