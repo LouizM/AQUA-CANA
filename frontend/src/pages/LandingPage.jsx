@@ -30,6 +30,33 @@ const LandingPage = () => {
   const [showOverlay, setShowOverlay] = useState(false);
   const [selectedVilla, setSelectedVilla] = useState(0);
   const [selectedAmenity, setSelectedAmenity] = useState(0);
+  const [showScrollHint, setShowScrollHint] = useState(false);
+
+  useEffect(() => {
+    let scrollTimer;
+    let hasScrolled = false;
+
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        hasScrolled = true;
+        setShowScrollHint(false);
+      }
+    };
+
+    // Mostrar hint después de 3 segundos si no ha scrolleado
+    scrollTimer = setTimeout(() => {
+      if (!hasScrolled && window.scrollY < 100) {
+        setShowScrollHint(true);
+      }
+    }, 3000);
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      clearTimeout(scrollTimer);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const nextVilla = () => {
     setSelectedVilla((prev) => (prev + 1) % villasData.length);
