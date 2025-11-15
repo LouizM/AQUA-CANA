@@ -95,7 +95,7 @@
 .brand-subtle {
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--color-turquoise-dark);
+  color: var(--color-jade-dark);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -117,7 +117,7 @@
 }
 
 .section-base {
-  background-color: var(--color-aqua-light);
+  background-color: var(--color-jade-bg);
 }
 
 .section-white {
@@ -230,7 +230,7 @@
 }
 
 .hero-cta {
-  background-color: var(--color-turquoise-vibrant);
+  background-color: var(--color-jade-vibrant);
   color: var(--color-white);
   font-size: 1.25rem;
   font-weight: 700;
@@ -244,7 +244,7 @@
 }
 
 .hero-cta:hover {
-  background-color: var(--color-turquoise-dark);
+  background-color: var(--color-jade-dark);
   transform: translateY(-2px);
 }
 
@@ -294,7 +294,7 @@
 }
 
 .feature-icon {
-  color: var(--color-turquoise-vibrant);
+  color: var(--color-jade-vibrant);
   margin-bottom: 1rem;
 }
 
@@ -314,7 +314,7 @@
 
 /* Construction Features */
 .construction-features {
-  background: var(--color-aqua-light);
+  background: var(--color-jade-bg);
   padding: 2rem;
   border-radius: 8px;
   margin-top: 2rem;
@@ -349,7 +349,7 @@
 }
 
 .check-icon {
-  color: var(--color-turquoise-vibrant);
+  color: var(--color-jade-vibrant);
   flex-shrink: 0;
 }
 
@@ -404,7 +404,7 @@
 }
 
 .benefit-list svg {
-  color: var(--color-turquoise-vibrant);
+  color: var(--color-jade-vibrant);
   flex-shrink: 0;
 }
 
@@ -433,7 +433,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: var(--color-turquoise-vibrant);
+  background: var(--color-jade-vibrant);
   color: var(--color-white);
   border: none;
   width: 70px;
@@ -449,7 +449,7 @@
 }
 
 .carousel-arrow:hover {
-  background: var(--color-turquoise-dark);
+  background: var(--color-jade-dark);
   transform: translateY(-50%) scale(1.1);
   box-shadow: 0 6px 30px rgba(0, 212, 196, 0.6);
 }
@@ -574,7 +574,7 @@
 .carousel-villa-price {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 900;
-  color: var(--color-turquoise-vibrant);
+  color: var(--color-jade-vibrant);
   margin-bottom: 2.5rem;
   line-height: 1;
 }
@@ -585,7 +585,7 @@
   gap: 1.5rem;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background: var(--color-aqua-light);
+  background: var(--color-jade-bg);
   border-radius: 12px;
 }
 
@@ -602,7 +602,7 @@
 }
 
 .carousel-spec svg {
-  color: var(--color-turquoise-vibrant);
+  color: var(--color-jade-vibrant);
   flex-shrink: 0;
 }
 
@@ -657,13 +657,13 @@
 }
 
 .carousel-features svg {
-  color: var(--color-turquoise-vibrant);
+  color: var(--color-jade-vibrant);
   flex-shrink: 0;
 }
 
 .carousel-cta {
   width: 100%;
-  background-color: var(--color-turquoise-vibrant);
+  background-color: var(--color-jade-vibrant);
   color: var(--color-white);
   font-size: 1.25rem;
   font-weight: 700;
@@ -677,7 +677,7 @@
 }
 
 .carousel-cta:hover {
-  background-color: var(--color-turquoise-dark);
+  background-color: var(--color-jade-dark);
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 212, 196, 0.4);
 }
@@ -708,13 +708,13 @@
 }
 
 .carousel-dot:hover {
-  background: var(--color-turquoise-vibrant);
+  background: var(--color-jade-vibrant);
   transform: scale(1.2);
 }
 
 .carousel-dot.active {
-  background: var(--color-turquoise-vibrant);
-  border-color: var(--color-turquoise-dark);
+  background: var(--color-jade-vibrant);
+  border-color: var(--color-jade-dark);
   transform: scale(1.4);
   box-shadow: 0 0 0 4px rgba(0, 212, 196, 0.2);
 }
@@ -744,7 +744,7 @@
 }
 
 .amenity-icon-inline {
-  color: var(--color-turquoise-vibrant);
+  color: var(--color-jade-vibrant);
   flex-shrink: 0;
   margin-top: 0.25rem;
 }
@@ -814,7 +814,7 @@
 }
 
 .form-benefits svg {
-  color: var(--color-turquoise-vibrant);
+  color: var(--color-jade-vibrant);
   flex-shrink: 0;
 }
 
@@ -841,7 +841,7 @@
 }
 
 .form-group label svg {
-  color: var(--color-turquoise-vibrant);
+  color: var(--color-jade-vibrant);
 }
 
 .form-group input {
@@ -855,12 +855,12 @@
 
 .form-group input:focus {
   outline: none;
-  border-color: var(--color-turquoise-vibrant);
+  border-color: var(--color-jade-vibrant);
 }
 
 .submit-button {
   width: 100%;
-  background-color: var(--color-turquoise-vibrant);
+  background-color: var(--color-jade-vibrant);
   color: var(--color-white);
   font-size: 1.125rem;
   font-weight: 700;
@@ -874,7 +874,7 @@
 }
 
 .submit-button:hover {
-  background-color: var(--color-turquoise-dark);
+  background-color: var(--color-jade-dark);
   transform: translateY(-2px);
 }
 
@@ -887,7 +887,7 @@
 
 /* CTA Buttons */
 .cta-button {
-  background-color: var(--color-turquoise-vibrant);
+  background-color: var(--color-jade-vibrant);
   color: var(--color-white);
   font-size: 1.125rem;
   font-weight: 700;
@@ -902,7 +902,7 @@
 }
 
 .cta-button:hover {
-  background-color: var(--color-turquoise-dark);
+  background-color: var(--color-jade-dark);
   transform: translateY(-2px);
 }
 
