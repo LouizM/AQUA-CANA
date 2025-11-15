@@ -98,8 +98,21 @@ const LandingPage = () => {
             </button>
             
             <div className="overlay-logo">
-              <div className="logo-placeholder">
-                AQUA CANA
+              <img 
+                src="https://customer-assets.emergentagent.com/job_luxury-residence-1/artifacts/bdm3xyz6_blanco.png" 
+                alt="Isotipo AQUA CANA" 
+                className="overlay-isotipo-top"
+              />
+              <div className="overlay-logo-box">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_luxury-residence-1/artifacts/bdm3xyz6_blanco.png" 
+                  alt="Isotipo AQUA CANA" 
+                  className="overlay-isotipo-inside"
+                />
+                <div className="overlay-logo-text">
+                  <span className="overlay-logo-main">AQUA CANA</span>
+                  <span className="overlay-logo-subtitle">COUNTRY AND RESIDENCE</span>
+                </div>
               </div>
             </div>
             
