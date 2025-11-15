@@ -442,11 +442,6 @@ const LandingPage = () => {
           <div className="footer-row">
             <div className="footer-brand">
               <div className="footer-logo-container">
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_luxury-residence-1/artifacts/bdm3xyz6_blanco.png" 
-                  alt="Isotipo AQUA CANA" 
-                  className="footer-isotipo"
-                />
                 <div className="footer-logo-text">
                   <span className="footer-logo-main">AQUA CANA</span>
                   <span className="footer-logo-subtitle">COUNTRY AND RESIDENCE</span>
