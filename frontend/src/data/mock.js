@@ -137,7 +137,7 @@ export const amenitiesData = [
     title: "PLAYA ARTIFICIAL",
     description: "4,000 m² de arena y aguas cristalinas para tu disfrute",
     icon: "waves",
-    imagePlaceholder: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/216malmh_playa%20artifical%202.jpg"
   },
   {
     title: "RESTAURANT & BAR CHILL OUT",
@@ -149,7 +149,7 @@ export const amenitiesData = [
     title: "SEGURIDAD 24/7",
     description: "Acceso controlado y vigilancia permanente para tu tranquilidad",
     icon: "shield",
-    imagePlaceholder: "https://images.unsplash.com/photo-1582139329536-e7284fece509?w=800&q=80"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/k4sw3owo_image%20%281%29.png"
   },
   {
     title: "ÁREAS DEPORTIVAS",
@@ -167,13 +167,13 @@ export const amenitiesData = [
     title: "ESPACIOS COMERCIALES",
     description: "Tiendas y servicios dentro del proyecto",
     icon: "shopping-bag",
-    imagePlaceholder: "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800&q=80"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/kztw4cke_espacios%20comerciales.png"
   },
   {
     title: "ÁREAS RECREATIVAS",
     description: "Parque infantil, zona para mascotas y gazebos",
     icon: "smile",
-    imagePlaceholder: "https://images.unsplash.com/photo-1560963689-52fa1fdc09d0?w=800&q=80"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/2v8jnx12_image.png"
   },
   {
     title: "TERRAZAS SOCIALES",
