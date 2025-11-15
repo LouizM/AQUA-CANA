@@ -1345,10 +1345,17 @@
 }
 
 .overlay-logo-box {
-  padding: 1rem 2rem;
+  padding: 1.25rem 3.5rem;
   border: 3px solid var(--color-white);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
+  min-width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .overlay-logo-box {
+    padding: 1rem 2.5rem;
+  }
 }
 
 .overlay-logo-text {
