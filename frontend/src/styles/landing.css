@@ -1838,7 +1838,13 @@
 
 @media (max-width: 768px) {
   .villa-content-wrapper {
-    padding: 0 2.5rem;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .villa-content-wrapper {
+    padding: 0 1rem;
   }
 }
 
