@@ -122,6 +122,20 @@ const LandingPage = () => {
 
   return (
     <div className="landing-container">
+      {/* Scroll Hint Indicators */}
+      {showScrollHint && (
+        <div className="scroll-hints">
+          <div className="scroll-hint scroll-hint-left">
+            <ChevronDown size={32} />
+            <span>Desliza hacia abajo</span>
+          </div>
+          <div className="scroll-hint scroll-hint-right">
+            <ChevronDown size={32} />
+            <span>Desliza hacia abajo</span>
+          </div>
+        </div>
+      )}
+
       {/* Logo Superior Izquierda */}
       <div className="top-logo">
         <img 
