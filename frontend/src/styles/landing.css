@@ -1462,55 +1462,46 @@
   }
 }
 
-/* Galería de Miniaturas */
+/* Galería de Miniaturas - Grid Layout */
 .villa-thumbnails-wrapper {
   width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-jade-vibrant) #e0e0e0;
-}
-
-.villa-thumbnails-wrapper::-webkit-scrollbar {
-  height: 8px;
-}
-
-.villa-thumbnails-wrapper::-webkit-scrollbar-track {
-  background: #e0e0e0;
-  border-radius: 10px;
-}
-
-.villa-thumbnails-wrapper::-webkit-scrollbar-thumb {
-  background: var(--color-jade-vibrant);
-  border-radius: 10px;
-}
-
-.villa-thumbnails-wrapper::-webkit-scrollbar-thumb:hover {
-  background: var(--color-jade-dark);
+  margin-top: 1.25rem;
 }
 
 .villa-thumbnails-scroll {
-  display: flex;
-  gap: 1rem;
-  padding: 0.5rem 0;
-  min-width: min-content;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+}
+
+@media (max-width: 1200px) {
+  .villa-thumbnails-scroll {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .villa-thumbnails-scroll {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+  }
 }
 
 @media (max-width: 480px) {
   .villa-thumbnails-scroll {
-    gap: 0.75rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
   }
 }
 
 .villa-thumbnail {
   position: relative;
-  width: 120px;
-  height: 85px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   border: 3px solid transparent;
-  flex-shrink: 0;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
