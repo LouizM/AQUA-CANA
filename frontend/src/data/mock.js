@@ -18,7 +18,11 @@ export const villasData = [
     ],
     imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/7xhl9ivq_villa%20larimar%20jr.jpg",
     gallery: [
-      // Aquí se agregarán las imágenes de la galería
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/m4tv81sy_Perspectiva%20de%20la%20calle%20completa%20copia.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/f6i9moa7_Correccion%20perspectiva%20derecha.RGB_color%20copia.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/4v2scujv_Sala%20viendo%20hacia%20la%20entrada%20copia.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/z5paka57_Sala%20viendo%20hacia%20cocina%20copia.jpg",
+      "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/d12hwsxi_Cocina%20viendo%20hacia%20sala%20copia.jpg"
     ]
   },
   {
