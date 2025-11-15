@@ -721,16 +721,47 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .carousel-spec {
+    justify-content: center;
+    gap: 1rem;
+  }
 }
 
 .carousel-spec svg {
   color: var(--color-jade-vibrant);
   flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 768px) {
+  .carousel-spec svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-spec svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .carousel-spec > div {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .carousel-spec > div {
+    align-items: center;
+  }
 }
 
 .spec-number {
@@ -740,12 +771,38 @@
   line-height: 1;
 }
 
+@media (max-width: 768px) {
+  .spec-number {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .spec-number {
+    font-size: 1rem;
+  }
+}
+
 .spec-label {
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--color-gray-dark);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .spec-label {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .spec-label {
+    font-size: 0.75rem;
+  }
 }
 
 .carousel-features {
