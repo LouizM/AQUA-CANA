@@ -16,7 +16,10 @@ export const villasData = [
       "Estacionamiento",
       "Terreno privado"
     ],
-    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/7xhl9ivq_villa%20larimar%20jr.jpg"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/7xhl9ivq_villa%20larimar%20jr.jpg",
+    gallery: [
+      // Aquí se agregarán las imágenes de la galería
+    ]
   },
   {
     id: 2,
@@ -33,7 +36,10 @@ export const villasData = [
       "2 parqueos",
       "Patio con jacuzzi opcional"
     ],
-    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/7swkqqiz_villa%20larimar.jpg"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/7swkqqiz_villa%20larimar.jpg",
+    gallery: [
+      // Aquí se agregarán las imágenes de la galería
+    ]
   },
   {
     id: 3,
@@ -51,7 +57,10 @@ export const villasData = [
       "Patio trasero con jacuzzi",
       "2 parqueos"
     ],
-    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/a1eas28q_villa%20los%20angeles.jpeg"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/a1eas28q_villa%20los%20angeles.jpeg",
+    gallery: [
+      // Aquí se agregarán las imágenes de la galería
+    ]
   },
   {
     id: 4,
@@ -68,7 +77,10 @@ export const villasData = [
       "Jacuzzi incluido",
       "2 parqueos"
     ],
-    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/qfuz191v_villa%20bahia%20serena.jpg"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/qfuz191v_villa%20bahia%20serena.jpg",
+    gallery: [
+      // Aquí se agregarán las imágenes de la galería
+    ]
   },
   {
     id: 5,
@@ -85,7 +97,10 @@ export const villasData = [
       "Jacuzzi opcional en terraza o patio",
       "2 parqueos"
     ],
-    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/o388xsh8_Villa%20Mare%20Deluxe%20P.jpeg"
+    imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/o388xsh8_Villa%20Mare%20Deluxe%20P.jpeg",
+    gallery: [
+      // Aquí se agregarán las imágenes de la galería
+    ]
   }
 ];
 
