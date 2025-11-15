@@ -221,9 +221,18 @@
 .logo-main {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 900;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.4em;
   color: var(--color-white);
   line-height: 1;
+  font-stretch: expanded;
+  transform: scaleX(1.15);
+}
+
+@media (max-width: 768px) {
+  .logo-main {
+    letter-spacing: 0.35em;
+    transform: scaleX(1.1);
+  }
 }
 
 .logo-subtitle {
