@@ -517,13 +517,14 @@ const LandingPage = () => {
       {/* BLOQUE 5: FORM + CTA - Diseño Minimalista Inmobiliario */}
       <section id="form-section" className="section section-form-immobiliaria">
         <div className="container">
-          <div className="form-header-immobiliaria">
-            <div className="form-brand-mark">AQUA CANA</div>
-            <h2 className="form-title-immobiliaria">
-              COMIENZA TU INVERSIÓN<br/>EN EL PARAÍSO CARIBEÑO
+          <div className="form-header-turquesa">
+            <div className="form-brand-mark-turquesa">AQUA CANA</div>
+            <h2 className="form-title-turquesa">
+              VIVE EN EL PARAÍSO HOY
             </h2>
-            <p className="form-subtitle-immobiliaria">
-              Déjanos tus datos y un asesor especializado te contactará en las próximas 24 horas
+            <p className="form-subtitle-destacado">Vive en Aqua Cana</p>
+            <p className="form-mensaje-cercano">
+              Te llamaremos en las próximas 24 horas
             </p>
           </div>
           
