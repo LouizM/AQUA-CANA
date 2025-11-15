@@ -93,42 +93,50 @@ export const amenitiesData = [
   {
     title: "PLAYA ARTIFICIAL",
     description: "4,000 m² de arena y aguas cristalinas para tu disfrute",
-    icon: "waves"
+    icon: "waves",
+    imagePlaceholder: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80"
   },
   {
     title: "RESTAURANT & BAR CHILL OUT",
     description: "Gastronomía y entretenimiento exclusivo para residentes",
-    icon: "utensils"
+    icon: "utensils",
+    imagePlaceholder: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80"
   },
   {
     title: "SEGURIDAD 24/7",
     description: "Acceso controlado y vigilancia permanente para tu tranquilidad",
-    icon: "shield"
+    icon: "shield",
+    imagePlaceholder: "https://images.unsplash.com/photo-1582139329536-e7284fece509?w=800&q=80"
   },
   {
     title: "ÁREAS DEPORTIVAS",
     description: "Fútbol, baloncesto, tenis, pickleball y pádel",
-    icon: "dumbbell"
+    icon: "dumbbell",
+    imagePlaceholder: "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800&q=80"
   },
   {
     title: "SENDERO ECOLÓGICO",
     description: "Conexión con la naturaleza en caminos diseñados",
-    icon: "tree-pine"
+    icon: "tree-pine",
+    imagePlaceholder: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
   },
   {
     title: "ESPACIOS COMERCIALES",
     description: "Tiendas y servicios dentro del proyecto",
-    icon: "shopping-bag"
+    icon: "shopping-bag",
+    imagePlaceholder: "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800&q=80"
   },
   {
     title: "ÁREAS RECREATIVAS",
     description: "Parque infantil, zona para mascotas y gazebos",
-    icon: "smile"
+    icon: "smile",
+    imagePlaceholder: "https://images.unsplash.com/photo-1560963689-52fa1fdc09d0?w=800&q=80"
   },
   {
     title: "TERRAZAS SOCIALES",
     description: "Espacios de convivencia para la comunidad",
-    icon: "users"
+    icon: "users",
+    imagePlaceholder: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
   }
 ];
 
