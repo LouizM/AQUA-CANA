@@ -238,8 +238,8 @@ const LandingPage = () => {
               <p className="solares-subtitle">SOLARES RESIDENCIALES EN PREVENTA</p>
               
               <p className="solares-description-immobiliaria">
-                Invierte en lotes residenciales premium en el desarrollo más exclusivo de Punta Cana. 
-                Ubicación estratégica con acceso a todas las amenidades del proyecto y alta valorización garantizada.
+                Adquiere tu lote residencial en el desarrollo más exclusivo de Punta Cana. 
+                Ubicación privilegiada con acceso directo a todas las amenidades y plusvalía garantizada.
               </p>
               
               <div className="solares-financiamiento-destacado">
