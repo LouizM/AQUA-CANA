@@ -264,9 +264,59 @@
   }
 }
 
-.solares-content-wrapper {
+.solares-content-wrapper-vendible {
   position: relative;
-  z-index: 2;
+  padding: 5rem 0 0 0;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.brand-subtle-white-vendible {
+  font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--color-jade-light);
+  margin-bottom: 1.5rem;
+  opacity: 0.85;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.solares-main-title-vendible {
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  font-weight: 200;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+  line-height: 1;
+  text-shadow: 
+    0 6px 30px rgba(0, 0, 0, 0.9),
+    0 3px 15px rgba(0, 0, 0, 0.7),
+    0 0 60px rgba(78, 227, 143, 0.3);
+}
+
+.solares-tagline-vendible {
+  font-size: clamp(1.125rem, 2.2vw, 1.5rem);
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 4rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .solares-content-wrapper-vendible {
+    padding: 3.5rem 0 0 0;
+  }
+  
+  .solares-main-title-vendible {
+    letter-spacing: 0.1em;
+  }
+  
+  .solares-tagline-vendible {
+    margin-bottom: 3rem;
+  }
 }
 
 .solares-content-grid {
