@@ -337,102 +337,71 @@ const LandingPage = () => {
       </section>
 
       {/* BLOQUE 5: FORM + CTA */}
-      <section id="form-section" className="section section-base">
+      <section id="form-section" className="section section-form-dark">
         <div className="container">
-          <div className="brand-subtle">AQUA CANA Country and Residence</div>
-          <h2 className="section-title">PREFERENCIA CLARA</h2>
-          <p className="section-subtitle">LLAMADO A LA ACCIÓN DEFINITIVO</p>
+          <h2 className="form-section-title">ASEGURA HOY TU INVERSIÓN A CERO COSTO INICIAL</h2>
           
-          <div className="form-container">
-            <div className="form-intro">
-              <h3>Asegura Tu Inversión Hoy</h3>
-              <p>
-                Completa el formulario y un asesor especializado te contactará 
-                para brindarte toda la información y opciones de financiamiento disponibles.
-              </p>
-              
-              <ul className="form-benefits">
-                <li>
-                  <Check size={20} />
-                  <span>Garantía escrow</span>
-                </li>
-                <li>
-                  <Check size={20} />
-                  <span>Opciones de financiamiento</span>
-                </li>
-                <li>
-                  <Check size={20} />
-                  <span>Asesoría legal especializada</span>
-                </li>
-                <li>
-                  <Check size={20} />
-                  <span>Respuesta en menos de 24 horas</span>
-                </li>
-              </ul>
+          <form onSubmit={handleSubmit} className="lead-form-centered">
+            <div className="form-group">
+              <label htmlFor="nombre">
+                <User size={20} />
+                Nombre Completo
+              </label>
+              <Input
+                id="nombre"
+                name="nombre"
+                type="text"
+                placeholder="Tu nombre completo"
+                value={formData.nombre}
+                onChange={handleInputChange}
+                required
+              />
             </div>
             
-            <form onSubmit={handleSubmit} className="lead-form">
-              <div className="form-group">
-                <label htmlFor="nombre">
-                  <User size={20} />
-                  Nombre Completo
-                </label>
-                <Input
-                  id="nombre"
-                  name="nombre"
-                  type="text"
-                  placeholder="Tu nombre completo"
-                  value={formData.nombre}
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="telefono">
-                  <Phone size={20} />
-                  Teléfono
-                </label>
-                <Input
-                  id="telefono"
-                  name="telefono"
-                  type="tel"
-                  placeholder="+1 (809) 000-0000"
-                  value={formData.telefono}
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="email">
-                  <Mail size={20} />
-                  Correo Electrónico
-                </label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="tu@email.com"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
-              
-              <Button 
-                type="submit"
-                size="lg"
-                className="submit-button"
-              >
-                APLICA AHORA
-              </Button>
-              
-              <p className="form-privacy">
-                Al enviar este formulario aceptas que un asesor se ponga en contacto contigo.
-              </p>
-            </form>
-          </div>
+            <div className="form-group">
+              <label htmlFor="telefono">
+                <Phone size={20} />
+                Teléfono
+              </label>
+              <Input
+                id="telefono"
+                name="telefono"
+                type="tel"
+                placeholder="+1 (809) 000-0000"
+                value={formData.telefono}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            
+            <div className="form-group">
+              <label htmlFor="email">
+                <Mail size={20} />
+                Correo Electrónico
+              </label>
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="tu@email.com"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            
+            <Button 
+              type="submit"
+              size="lg"
+              className="submit-button-centered"
+            >
+              APLICA AHORA
+            </Button>
+            
+            <p className="form-privacy-centered">
+              Al enviar este formulario aceptas que un asesor se ponga en contacto contigo.
+            </p>
+          </form>
         </div>
       </section>
 
