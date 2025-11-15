@@ -1958,15 +1958,13 @@
 
 @media (max-width: 768px) {
   .villa-thumbnail {
-    width: 100px;
-    height: 70px;
+    border-radius: 8px;
   }
 }
 
 @media (max-width: 480px) {
   .villa-thumbnail {
-    width: 85px;
-    height: 60px;
+    border-radius: 6px;
   }
 }
 
