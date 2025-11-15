@@ -258,7 +258,7 @@ const LandingPage = () => {
                     <Maximize size={28} />
                   </div>
                   <h4>Desde 250 m²</h4>
-                  <p>Lotes amplios con diseño flexible para construir tu villa ideal</p>
+                  <p>Lotes premium con diseño flexible para tu proyecto residencial soñado</p>
                 </div>
                 
                 <div className="solar-feature-card">
@@ -266,15 +266,15 @@ const LandingPage = () => {
                     <Home size={28} />
                   </div>
                   <h4>Preventa Exclusiva</h4>
-                  <p>Precios preferenciales antes del lanzamiento oficial al mercado</p>
+                  <p>Precios especiales por lanzamiento antes del público general</p>
                 </div>
                 
                 <div className="solar-feature-card">
                   <div className="feature-icon-wrapper">
                     <Check size={28} />
                   </div>
-                  <h4>Plusvalía Asegurada</h4>
-                  <p>Ubicación estratégica en zona de alto crecimiento turístico</p>
+                  <h4>Plusvalía Garantizada</h4>
+                  <p>Zona de alto crecimiento con proyección de valorización sostenida</p>
                 </div>
               </div>
               
