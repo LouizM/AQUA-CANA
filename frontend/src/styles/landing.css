@@ -874,6 +874,41 @@
   margin-top: 3rem;
 }
 
+/* Sección Solares en Preventa - Fondo Turquesa Caribeño */
+.solares-vendible-section {
+  position: relative;
+  background: linear-gradient(135deg, #006B7D 0%, #00495A 100%);
+  color: var(--color-white);
+  padding: 8rem 0;
+  overflow: hidden;
+}
+
+.solares-vendible-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.02) 2px,
+      rgba(255, 255, 255, 0.02) 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.02) 2px,
+      rgba(255, 255, 255, 0.02) 4px
+    );
+  opacity: 0.3;
+  z-index: 1;
+  pointer-events: none;
+}
 /* Hero Section */
 .hero-section {
   position: relative;
