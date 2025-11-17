@@ -57,10 +57,10 @@ export const villasData = [
     id: 3,
     name: "VILLA LOS 3 ÁNGELES",
     subtitle: "AMPLITUD Y CONFORT EN DOS NIVELES",
-    price: "US$235,500",
+    price: "US$235,200*",
     bedrooms: 3,
     bathrooms: 3.5,
-    lotSize: "234 m²",
+    lotSize: "250 m²",
     constructionSize: "147 m²",
     features: [
       "2 niveles de diseño",
