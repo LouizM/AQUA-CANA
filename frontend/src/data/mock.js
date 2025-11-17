@@ -33,10 +33,10 @@ export const villasData = [
     id: 2,
     name: "VILLA LARIMAR",
     subtitle: "ELEGANCIA DE UN NIVEL",
-    price: "Desde US$189,036",
+    price: "Desde US$180,000*",
     bedrooms: 3,
     bathrooms: 2,
-    lotSize: "220 m²",
+    lotSize: "250 m²",
     constructionSize: "118 m²",
     features: [
       "Villa de un nivel",
