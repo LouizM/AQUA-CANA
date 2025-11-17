@@ -34,7 +34,7 @@
 .landing-container {
   width: 100%;
   overflow-x: hidden;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Forum', 'Didot', 'Bodoni MT', serif;
   color: var(--color-black);
   line-height: 1.6;
 }
