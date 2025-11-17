@@ -109,9 +109,10 @@ export const villasData = [
     id: 5,
     name: "VILLA MARE DELUXE",
     subtitle: "LUJO Y EXCLUSIVIDAD DEFINITIVA",
-    price: "US$250,500",
+    price: "US$250,500*",
     bedrooms: 3,
     bathrooms: 3.5,
+    lotSize: "250 m²",
     constructionSize: "167 m²",
     features: [
       "2 niveles de máximo confort",
