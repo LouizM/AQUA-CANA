@@ -2373,6 +2373,39 @@
   }
 }
 
+/* Notas Legales de Villa */
+.villa-legal-notes {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.legal-note-price,
+.legal-note-images {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.legal-note-images {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 480px) {
+  .villa-legal-notes {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+  }
+  
+  .legal-note-price,
+  .legal-note-images {
+    font-size: 0.7rem;
+  }
+}
+
 /* Amenities Carousel */
 /* Amenities Section - Estilo Inmobiliario Urbanístico Caribeño */
 .amenities-carousel-section {
