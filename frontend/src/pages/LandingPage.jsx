@@ -233,8 +233,8 @@ const LandingPage = () => {
         {/* Cinta Animada - OPORTUNIDAD ÚNICA */}
         <div className="solares-marquee-wrapper">
           <div className="solares-marquee">
-            <span className="marquee-text">OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • </span>
-            <span className="marquee-text">OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • OPORTUNIDAD ÚNICA • </span>
+            <span className="marquee-text">OPORTUNIDAD ÚNICA - PRECIOS DE LANZAMIENTO • OPORTUNIDAD ÚNICA - PRECIOS DE LANZAMIENTO • OPORTUNIDAD ÚNICA - PRECIOS DE LANZAMIENTO • </span>
+            <span className="marquee-text">OPORTUNIDAD ÚNICA - PRECIOS DE LANZAMIENTO • OPORTUNIDAD ÚNICA - PRECIOS DE LANZAMIENTO • OPORTUNIDAD ÚNICA - PRECIOS DE LANZAMIENTO • </span>
           </div>
         </div>
         
