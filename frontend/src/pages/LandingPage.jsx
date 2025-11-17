@@ -454,6 +454,12 @@ const LandingPage = () => {
                   >
                     QUIERO ESTA VILLA
                   </Button>
+                  
+                  {/* Notas Legales */}
+                  <div className="villa-legal-notes">
+                    <p className="legal-note-price">*Precios de referencia, sujeto a variación según el solar elegido</p>
+                    <p className="legal-note-images"><strong>Imágenes y planos conceptuales, no definitivos sujetos a variaciones</strong></p>
+                  </div>
                 </div>
               </div>
             </div>
