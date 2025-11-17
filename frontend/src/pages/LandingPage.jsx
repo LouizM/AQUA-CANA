@@ -533,9 +533,9 @@ const LandingPage = () => {
           <div className="form-header-turquesa">
             <div className="form-brand-mark-turquesa">AQUA CANA</div>
             <h2 className="form-title-turquesa">
-              VIVE EN EL PARAÍSO HOY
+              VIVE EN PUNTA CANA
             </h2>
-            <p className="form-subtitle-destacado">Vive en Aqua Cana</p>
+            <p className="form-subtitle-destacado">Tu vida en el paraíso comienza aquí</p>
             <p className="form-mensaje-cercano">
               Te llamaremos en las próximas 24 horas
             </p>
