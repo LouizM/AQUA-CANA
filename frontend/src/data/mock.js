@@ -84,9 +84,10 @@ export const villasData = [
     id: 4,
     name: "VILLA BAHÍA SERENA",
     subtitle: "TRANQUILIDAD Y ESTILO CONTEMPORÁNEO",
-    price: "US$238,500",
+    price: "US$238,500*",
     bedrooms: 3,
     bathrooms: 3.5,
+    lotSize: "250 m²",
     constructionSize: "159 m²",
     features: [
       "2 niveles modernos",
