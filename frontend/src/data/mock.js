@@ -5,10 +5,10 @@ export const villasData = [
     id: 1,
     name: "VILLA LARIMAR JR",
     subtitle: "TU PRIMERA INVERSIÓN EN EL PARAÍSO",
-    price: "US$121,000",
+    price: "US$121,000*",
     bedrooms: 2,
     bathrooms: 2,
-    lotSize: "220 m²",
+    lotSize: "250 m²",
     constructionSize: "83 m²",
     features: [
       "Sala, comedor y cocina",
