@@ -137,7 +137,7 @@ export const villasData = [
 export const amenitiesData = [
   {
     title: "PLAYA ARTIFICIAL",
-    description: "4,000 m² de arena y aguas cristalinas para tu disfrute",
+    description: "Estilo de Vida en Armonía con la naturaleza Tropical",
     icon: "waves",
     imagePlaceholder: "https://customer-assets.emergentagent.com/job_73f3a380-cb7b-4677-98c7-1ebcd841c964/artifacts/216malmh_playa%20artifical%202.jpg"
   },
