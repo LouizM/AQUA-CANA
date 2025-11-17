@@ -184,14 +184,17 @@ const LandingPage = () => {
 
       {/* BLOQUE 1: HERO */}
       <section className="hero-section">
-        <div 
-          className="hero-image"
-          style={{
-            backgroundImage: 'url(https://customer-assets.emergentagent.com/job_luxury-residence-1/artifacts/05qbiqdg_playa%20artificial.jpg)'
-          }}
-        ></div>
+        <video
+          className="hero-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="https://customer-assets.emergentagent.com/job_luxury-residence-2/artifacts/74gokavf_playa%20artificial%20video.mp4" type="video/mp4" />
+        </video>
         
-        <div className="hero-overlay"></div>
+        <div className="hero-overlay-bright"></div>
         
         <div className="hero-content">
           <div className="hero-brand-section">
@@ -211,7 +214,7 @@ const LandingPage = () => {
           <div className="hero-main-content">
             <h1 className="hero-main-title">LA VILLA DE TUS SUEÑOS</h1>
             <div className="hero-subtitle-group">
-              <p className="hero-main-subtitle">EN EL CORAZÓN DEL CARIBE</p>
+              <p className="hero-main-subtitle">EN EL CORAZÓN DE PUNTA CANA</p>
               <span className="hero-badge-text">· 0% DE INICIAL ·</span>
             </div>
           </div>
