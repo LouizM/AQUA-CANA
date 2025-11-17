@@ -242,7 +242,7 @@
 .solares-marquee {
   display: flex;
   white-space: nowrap;
-  animation: marqueeScroll 30s linear infinite;
+  animation: marqueeScroll 15s linear infinite;
 }
 
 .marquee-text {
